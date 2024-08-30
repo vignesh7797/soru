@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo{
+    @apply bg-no-repeat bg-center bg-contain w-36 h-16 transition-all duration-150;
+
+    background-image: url('../../../assets/logo_big.png');
+
+    &.fixed_logo{
+        @apply h-10 transition-all duration-150;
+    }
+}
+
+.menu-item{
+    @apply border-0 px-4 py-1.5  text-white rounded hover:bg-zinc-600 hover:bg-opacity-50 font-light;
+
+    &.active{
+        @apply bg-amber-300 bg-opacity-40 hover:bg-amber-400 hover:text-black hover:bg-opacity-100;
+
+        &.fixed_active{
+            @apply bg-transparent text-amber-400 font-medium
+        }
+    }
+}
+
+.quick_icons{
+    @apply flex items-center justify-center text-white p-2 rounded-full w-12 h-12 hover:bg-zinc-400 hover:bg-opacity-40
+}

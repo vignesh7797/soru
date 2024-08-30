@@ -1,0 +1,25 @@
+.banner{
+    @apply h-screen w-full bg-no-repeat bg-center bg-cover;
+
+    background-image: url('../../../assets/banner.jpg');
+
+    // &::after{
+    //     @apply w-full h-full bg-zinc-900 bg-opacity-70;
+
+    //     content:'';
+    //     display: block;
+        
+    // }
+
+    .mask{
+       @apply w-full h-full flex flex-col justify-center items-center bg-zinc-900 bg-opacity-70 ;
+
+       .banner-header{
+            @apply  font-paint text-7xl text-white;
+       }
+
+       .banner-subHeader{
+            @apply text-white text-lg mt-3;
+       }
+    }
+}

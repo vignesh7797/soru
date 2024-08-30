@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'mono' : ['Fira Mono']
+      'mono' : ['Fira Mono'],
+      'paint' : ['Finger Paint']
     }
   },
   plugins: [],

@@ -23,12 +23,38 @@
   </div>
 </div>
 
-<div class="w-screen flex justify-center items-center transition-all px-3 py-4" [ngClass]="isFixed ? 'fixed top-0 left-0 bg-zinc-700 drop-shadow-md' : 'absolute' ">
-  <img src="../../../assets/logo_big.svg" alt="">
-  <ul>
-    <li class="font-semibold mr-2">Home</li>
-    <li class="font-semibold mr-2">Menu</li>
-    <li class="font-semibold mr-2">About Us</li>
+<div
+  class="w-screen flex justify-between items-center transition-all px-4 py-3"
+  [ngClass]="
+    isFixed ? 'fixed top-0 left-0 bg-zinc-700 drop-shadow-md' : 'absolute'
+  "
+>
+  <button class="logo" [class.fixed_logo]="isFixed"></button>
+  <ul class="flex justify-center items-center w-1/2">
+    <li class="">
+      <button class="menu-item active" [class.fixed_active]="isFixed">
+        Home
+      </button>
+    </li>
+    <li class="">
+      <button class="menu-item">Menu</button>
+    </li>
+    <li class="">
+      <button class="menu-item">About Us</button>
+    </li>
+    <li class="">
+      <button class="menu-item">Contact</button>
+    </li>
   </ul>
+  <div class="flex">
+    <button class="quick_icons">
+      <span class="material-symbols-outlined"> today </span>
+    </button>
+    <button class="quick_icons">
+      <span class="material-symbols-outlined"> favorite </span>
+    </button>
+    <button class="quick_icons">
+      <span class="material-symbols-rounded"> shopping_cart </span>
+    </button>
+  </div>
 </div>
-
