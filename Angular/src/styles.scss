@@ -10,3 +10,11 @@
 body{
     @apply font-mono bg-zinc-800 w-screen overflow-x-hidden;
 }
+
+.btn-primary{
+    @apply bg-amber-400 px-3 py-1 rounded shadow-md text-black hover:bg-amber-300 mx-2;
+}
+
+.btn-secondary{
+    @apply bg-zinc-700 px-3 py-1 rounded shadow-md text-white hover:bg-zinc-600 mx-2;
+}
