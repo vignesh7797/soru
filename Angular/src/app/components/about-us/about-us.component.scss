@@ -1,0 +1,26 @@
+.aboutUs-container{
+    @apply flex justify-center flex-col items-center;
+    .aboutUs-header{
+        @apply text-center text-white text-2xl leading-10 border-b-4 border-amber-400 w-fit;
+    }
+
+    .sub-header{
+        @apply text-center text-wrap text-zinc-300 mt-8 font-light;
+    }
+
+    .content-box{
+        @apply flex;
+
+        .about-banner{
+            @apply w-1/2 bg-[url('../../../assets/bg_2.jpg')] bg-cover;
+        }
+
+        .about-content{
+            @apply w-1/2;
+
+            .about-title{
+                @apply text-amber-400 font-bold text-lg;
+            }
+        }
+    }
+}
