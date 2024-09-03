@@ -13,7 +13,6 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onScroll(){
-    console.log(window.scrollY)
     this.isFixed = window.scrollY >= 30;
   }
 

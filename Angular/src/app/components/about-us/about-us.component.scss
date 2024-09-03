@@ -9,17 +9,25 @@
     }
 
     .content-box{
-        @apply flex;
+        @apply flex w-full mt-8 bg-black bg-opacity-50;
 
         .about-banner{
-            @apply w-1/2 bg-[url('../../../assets/bg_2.jpg')] bg-cover;
+            @apply w-1/2 bg-[url('../../../assets/bg_2.jpg')] bg-cover bg-center;
         }
 
         .about-content{
-            @apply w-1/2;
+            @apply w-1/2 p-8 grid;
 
             .about-title{
                 @apply text-amber-400 font-bold text-lg;
+            }
+
+            .about-desc{
+                @apply text-white mt-4 text-sm text-justify;
+            }
+
+            .about-read{
+                @apply bg-amber-400 text-black text-sm hover:bg-amber-500 rounded shadow px-3 py-1 mt-8 place-self-end;
             }
         }
     }
