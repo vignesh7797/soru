@@ -1,3 +1,36 @@
 .home-feed-container{
     @apply w-full bg-[url('../../../assets/bg_1.jpg')] bg-cover bg-no-repeat p-6;
 }
+
+.home-timetable{
+    @apply w-full h-60 flex justify-between items-center bg-[url('../../../assets/bg_3.png')] bg-cover p-2;
+    
+    .time-item{
+        @apply py-2 px-4;
+
+        .time-img{
+            @apply w-36 h-32 bg-cover;
+
+            &.breakfast{
+                @apply bg-[url('../../../assets/breakfast.png')]
+            }
+            &.dinner{
+                @apply bg-[url('../../../assets/dinner.png')]
+            }
+            &.lunch{
+                @apply bg-[url('../../../assets/lunch.png')]
+            }
+            &.snacks{
+                @apply bg-[url('../../../assets/snacks.png')]
+            }
+        }
+
+        .time-title{
+            @apply text-xl font-bold text-white text-center my-4;
+        }
+
+        .time-quote{
+            @apply text-white text-sm text-center;
+        }
+    }
+}

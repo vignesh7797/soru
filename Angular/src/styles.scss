@@ -20,3 +20,15 @@ body{
 .btn-secondary{
     @apply bg-zinc-700 px-3 py-1 rounded shadow-md text-white hover:bg-zinc-600 mx-2;
 }
+
+.card{
+    @apply bg-black bg-opacity-50 w-full p-4 shadow;
+}
+
+.head-primary{
+    @apply text-center text-white text-2xl leading-10 border-b-4 border-amber-400 w-fit;
+}
+
+.quick_icons{
+    @apply flex items-center justify-center text-white p-2 rounded-full w-12 h-12 hover:bg-zinc-400 hover:bg-opacity-40
+}

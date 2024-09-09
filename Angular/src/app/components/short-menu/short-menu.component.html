@@ -1,0 +1,34 @@
+<div class="card mt-8 flex flex-col justify-center items-center">
+  <p class="head-primary">Menu for you</p>
+
+  <div class="flex flex-wrap items-center justify-between p-4">
+    @for(menu of menus; track menu){
+      <div class="menu-item" style="background-image: url('media/bg_2.jpg')">
+        <div class="mask">
+          <div class="p-2">
+            <p class="recipe-title">{{menu.title}}</p>
+            <p class="recipe-detail">{{menu.recipe}}</p>
+            <div class="veg"></div>
+            <p class="rating">
+              @for(rate of [].constructor(menu.ratings); track rate){
+                <span class="material-icons"> star </span>
+              }
+            </p>
+          </div>
+  
+          <div class="flex justify-end ">
+            <button class="quick_icons">
+              <span class="material-symbols-outlined"> favorite </span>
+            </button>
+            <button class="quick_icons">
+              <span class="material-symbols-rounded"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    }
+    
+  </div>
+
+  <button class="btn-primary">view all menu</button>
+</div>

@@ -9,7 +9,7 @@
     }
 
     .content-box{
-        @apply flex w-full mt-8 bg-black bg-opacity-50;
+        @apply flex w-full min-h-[34rem] mt-8 bg-black bg-opacity-50;
 
         .about-banner{
             @apply w-1/2 bg-[url('../../../assets/bg_2.jpg')] bg-cover bg-center;
