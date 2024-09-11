@@ -1,0 +1,59 @@
+.carousel {
+    @apply relative w-full overflow-hidden p-8;
+  }
+  
+  .carousel-track-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-slide {
+    @apply min-w-full min-h-80 transition-all duration-500 p-4 flex justify-center items-center;
+  }
+
+  .slide-content{
+    @apply w-2/3 text-center text-white text-sm p-2 leading-10;
+  }
+
+  .slide-quote{
+    @apply text-4xl text-amber-400 font-extrabold;
+    
+    &:first-child{
+        transform: rotateY(180deg);
+    }
+
+  }
+  
+  .carousel-button {
+    @apply absolute top-1/2 rounded-full hover:bg-amber-400 text-amber-400 hover:text-black p-3 w-12 h-12 flex justify-center items-center; 
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-button-left {
+    left: 10px;
+  }
+  
+  .carousel-button-right {
+    right: 10px;
+  }
+  
+  .carousel-nav {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .carousel-indicator {
+    // background-color: #bbb;
+    @apply border-[2px] border-amber-400 inline-block w-3 h-3 rounded-full mx-1 cursor-pointer;
+  }
+  
+  .current-nav {
+    @apply bg-amber-400;
+  }

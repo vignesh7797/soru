@@ -1,0 +1,51 @@
+<!-- <div class="h-40 w-full bg-gray-400 flex flex-row justify-center items-center flex-nowrap overflow-hidden">
+    <div class="min-w-full h-[80%] border-2 border-amber-400 rounded transition-all duration-500" [class.active]="slideIndex == 0">
+        <h1>1</h1>
+    </div>
+    <div class="min-w-full h-[80%] border-2 border-amber-400 rounded transition-all duration-500" [class.active]="slideIndex == 1">
+       <h1>2</h1>
+    </div>
+    <div class="min-w-full h-[80%] border-2 border-amber-400 rounded transition-all duration-500" [class.active]="slideIndex == 2">
+        <h1>3</h1>
+    </div>
+</div> -->
+
+<div class="carousel">
+  <div class="carousel-track-container">
+    <ul class="carousel-track" [style.transform]="transform">
+      <li
+        class="carousel-slide"
+        *ngFor="let slide of slides; let i = index"
+        [class.current-slide]="i === currentIndex"
+      >
+        <p class="slide-content">
+            <span class="material-icons-round slide-quote">format_quote</span>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis autem
+          aspernatur est ea dolorem vitae architecto quidem, reprehenderit porro
+          fugit ut consectetur iusto non atque possimus officiis quos sed
+          repellendus sit error obcaecati tenetur? Eligendi sint harum maiores
+          maxime fugit ea velit. Incidunt voluptates animi repellat corrupti
+          laboriosam id voluptatem.
+            <span class="material-icons-round slide-quote">format_quote</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <button class="carousel-button carousel-button-left" (click)="moveToPrev()">
+    <span class="material-icons-round">arrow_back_ios</span>
+  </button>
+
+  <button class="carousel-button carousel-button-right" (click)="moveToNext()">
+    <span class="material-icons-round"> arrow_forward_ios </span>
+  </button>
+  
+  <div class="carousel-nav">
+    <button
+      *ngFor="let slide of slides; let i = index"
+      class="carousel-indicator"
+      [class.current-nav]="i === currentIndex"
+      (click)="moveToSlide(i)"
+    ></button>
+  </div>
+</div>
