@@ -18,7 +18,7 @@ body{
 }
 
 .btn-secondary{
-    @apply bg-zinc-700 px-3 py-1 rounded shadow-md text-white hover:bg-zinc-600 mx-2;
+    @apply bg-zinc-700 px-3 py-1 rounded shadow-md text-white text-sm hover:bg-zinc-600 mx-2;
 }
 
 .card{
@@ -31,4 +31,14 @@ body{
 
 .quick_icons{
     @apply flex items-center justify-center text-white p-2 rounded-full w-12 h-12 hover:bg-zinc-400 hover:bg-opacity-40
+}
+
+.btn-lg{
+    @apply px-4 py-2;
+}
+
+.logo{
+    @apply bg-no-repeat bg-center bg-contain w-36 h-16 transition-all duration-150;
+
+    background-image: url('./assets/logo_big.png');
 }
