@@ -1,10 +1,36 @@
 <div class="banner">
-    <div class="mask">
-        <h1 class="banner-header">Welcome to Soru</h1>
-        <p class="banner-subHeader">Booking a table is easy now</p>
-        <div class="banner-btns">
-            <button class="btn-secondary">Menu</button>
-            <button class="btn-primary">Reservation</button>
+
+    @switch (type) {
+        @case ('menu') {
+            <div *ngTemplateOutlet="menu"></div>
+        }
+        @default {
+            <div *ngTemplateOutlet="home"></div>
+        }
+    }
+</div>
+
+
+
+<ng-template #menu>
+    <div class="banner-menu">
+        <div class="mask">
+            <h1 class="banner-header">Menu</h1>
+            <p class="banner-subHeader"> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. officiis vero consequuntur!" </p>
         </div>
     </div>
-</div>
+</ng-template>
+
+
+<ng-template #home>
+    <div class="banner-home">
+        <div class="mask">
+            <h1 class="banner-header">Welcome to Soru</h1>
+            <p class="banner-subHeader">Booking a table is easy now</p>
+            <div class="banner-btns">
+                <button class="btn-secondary">Menu</button>
+                <button class="btn-primary">Reservation</button>
+            </div>
+        </div>
+    </div>
+</ng-template>

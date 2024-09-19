@@ -8,7 +8,7 @@
           <div class="p-2">
             <p class="recipe-title">{{menu.title}}</p>
             <p class="recipe-detail">{{menu.recipe}}</p>
-            <div class="veg"></div>
+            <div [class]="menu.type"></div>
             <p class="rating">
               @for(rate of [].constructor(menu.ratings); track rate){
                 <span class="material-icons"> star </span>

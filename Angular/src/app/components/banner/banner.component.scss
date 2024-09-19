@@ -1,7 +1,16 @@
 .banner{
-    @apply h-screen w-full bg-no-repeat bg-center bg-cover;
+    @apply w-full bg-no-repeat bg-center bg-cover;
 
-    background-image: url('../../../assets/banner.jpg');
+    .banner-home{
+      @apply h-screen;
+      background-image: url('../../../assets/banner.jpg');
+    }
+
+    .banner-menu{
+      @apply h-[40vh];
+
+      background-image: url('../../../assets/banner_2.jpeg');
+    }
 
 
     .mask{
@@ -12,7 +21,7 @@
        }
 
        .banner-subHeader{
-            @apply text-white text-lg mt-3;
+            @apply text-white  mt-3 w-2/5 font-mono text-sm text-center italic;
        }
 
        .banner-btns{

@@ -29,21 +29,21 @@
     isFixed ? 'fixed top-0 left-0 bg-zinc-700 drop-shadow-md' : 'absolute'
   "
 >
-  <button class="logo" [class.fixed_logo]="isFixed"></button>
+  <button class="logo" [class.fixed_logo]="isFixed" routerLink=""></button>
   <ul class="flex justify-center items-center w-1/2">
     <li class="">
-      <button class="menu-item active" [class.fixed_active]="isFixed">
+      <button class="menu-item" [class.fixed_active]="isFixed" [routerLink]="''" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
         Home
       </button>
     </li>
     <li class="">
-      <button class="menu-item">Menu</button>
+      <button class="menu-item" routerLink="menu" routerLinkActive="active">Menu</button>
     </li>
     <li class="">
-      <button class="menu-item">About Us</button>
+      <button class="menu-item" routerLink="aboutUs" routerLinkActive="active">About Us</button>
     </li>
     <li class="">
-      <button class="menu-item">Contact</button>
+      <button class="menu-item" routerLink="contact" routerLinkActive="active">Contact</button>
     </li>
   </ul>
   <div class="flex">
