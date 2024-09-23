@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
+@import "primeng/resources/themes/lara-dark-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,4 +44,46 @@ body{
     @apply bg-no-repeat bg-center bg-contain w-36 h-16 transition-all duration-150;
 
     background-image: url('./assets/logo_big.png');
+}
+
+
+
+// Tab Menu
+
+.p-tabmenu{
+
+    .p-tabmenu-nav{
+        @apply bg-transparent;
+
+        .p-tabmenuitem{
+            @apply bg-transparent p-2;
+
+            .p-menuitem-link{
+                @apply bg-transparent text-[#8A8A8D] font-mono font-light p-0 h-fit;
+
+                .p-menuitem-text{
+                    @apply  leading-8 px-2;
+                }
+            }
+
+            &.p-highlight{
+                .p-menuitem-link{
+                    @apply text-white font-bold border-b-2 border-amber-400;
+                }
+            }
+        }
+    }
+}
+
+// Paginator
+.p-paginator{
+    @apply bg-transparent p-0;
+
+    .p-paginator-page{
+        @apply font-mono h-8 min-w-8;
+
+        &.p-highlight{
+            @apply text-amber-400 font-bold;
+        }
+    }
 }
