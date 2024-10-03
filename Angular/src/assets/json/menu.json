@@ -1,0 +1,1152 @@
+[
+   {
+     "_id": "66f51153711c35e02b71b04b",
+     "guid": "eb24800b-4a83-4a78-9dff-bdfb59d7e449",
+     "title": "aliquip cupidatat",
+     "recipe": [
+       "aliqua",
+       "incididunt",
+       "incididunt",
+       "labore",
+       "do",
+       "tempor",
+       "ullamco"
+     ],
+     "ratings": 3.27,
+     "price": "$167.12",
+     "type": "nonveg",
+     "tags": [
+       "starters",
+       "drinks",
+       "starters"
+     ],
+     "imgSrc": "https://picsum.photos/id/3/720/720"
+   },
+   {
+     "_id": "66f5115308ed3e926aeea7ae",
+     "guid": "d4c975a6-9c5a-4aa4-b24f-c52044979630",
+     "title": "sunt incididunt",
+     "recipe": [
+       "ea",
+       "veniam",
+       "fugiat",
+       "officia",
+       "dolor",
+       "do",
+       "duis"
+     ],
+     "ratings": 3.56,
+     "price": "$169.83",
+     "type": "nonveg",
+     "tags": [
+       "desserts",
+       "seafoods",
+       "mutton"
+     ],
+     "imgSrc": "https://picsum.photos/id/80/720/720"
+   },
+   {
+     "_id": "66f51153ce9bf0d83d5f8991",
+     "guid": "6996634b-6ac9-48bf-8651-0a91e89b2588",
+     "title": "voluptate consectetur",
+     "recipe": [
+       "nostrud",
+       "consectetur",
+       "est",
+       "laborum",
+       "deserunt",
+       "Lorem",
+       "qui"
+     ],
+     "ratings": 2.88,
+     "price": "$179.91",
+     "type": "veg",
+     "tags": [
+       "seafoods",
+       "desserts",
+       "meals"
+     ],
+     "imgSrc": "https://picsum.photos/id/76/720/720"
+   },
+   {
+     "_id": "66f511532d4fbe0964259ef0",
+     "guid": "af271139-be55-489b-aafd-6ccd3f751f0b",
+     "title": "laborum proident",
+     "recipe": [
+       "Lorem",
+       "occaecat",
+       "ad",
+       "ut",
+       "nostrud",
+       "exercitation",
+       "sit"
+     ],
+     "ratings": 4.9,
+     "price": "$121.35",
+     "type": "veg",
+     "tags": [
+       "chicken",
+       "soups",
+       "seafoods"
+     ],
+     "imgSrc": "https://picsum.photos/id/18/720/720"
+   },
+   {
+     "_id": "66f51153f39f46841ffa452a",
+     "guid": "fabca941-aa4e-43fc-a1d0-f6ea3d5ca1e9",
+     "title": "nostrud officia",
+     "recipe": [
+       "et",
+       "dolor",
+       "adipisicing",
+       "esse",
+       "nisi",
+       "fugiat",
+       "Lorem"
+     ],
+     "ratings": 4.73,
+     "price": "$5.34",
+     "type": "nonveg",
+     "tags": [
+       "seafoods",
+       "drinks",
+       "desserts"
+     ],
+     "imgSrc": "https://picsum.photos/id/57/720/720"
+   },
+   {
+     "_id": "66f51153c26ec26fbb48bdd0",
+     "guid": "e002d40b-06a3-4033-a302-a74858ba6306",
+     "title": "exercitation eu",
+     "recipe": [
+       "exercitation",
+       "incididunt",
+       "ea",
+       "commodo",
+       "adipisicing",
+       "velit",
+       "ex"
+     ],
+     "ratings": 4.64,
+     "price": "$101.29",
+     "type": "veg",
+     "tags": [
+       "desserts",
+       "seafoods",
+       "meals"
+     ],
+     "imgSrc": "https://picsum.photos/id/25/720/720"
+   },
+   {
+     "_id": "66f511538c3033e1d4fa527b",
+     "guid": "fbbf63f8-520a-49ba-9aca-6e3beb7a7b8e",
+     "title": "sunt ad",
+     "recipe": [
+       "labore",
+       "cillum",
+       "consectetur",
+       "nulla",
+       "commodo",
+       "qui",
+       "anim"
+     ],
+     "ratings": 2.28,
+     "price": "$106.18",
+     "type": "nonveg",
+     "tags": [
+       "drinks",
+       "chicken",
+       "seafoods"
+     ],
+     "imgSrc": "https://picsum.photos/id/85/720/720"
+   },
+   {
+     "_id": "66f5115313bbc915cad3af9f",
+     "guid": "af828163-9016-4551-b80c-1603c9172dd0",
+     "title": "nisi aliqua",
+     "recipe": [
+       "excepteur",
+       "culpa",
+       "cupidatat",
+       "enim",
+       "ad",
+       "voluptate",
+       "dolore"
+     ],
+     "ratings": 3.97,
+     "price": "$56.00",
+     "type": "nonveg",
+     "tags": [
+       "starters",
+       "drinks",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/71/720/720"
+   },
+   {
+     "_id": "66f51153a9912315ca124d8c",
+     "guid": "948f250f-25f9-4f9c-8acc-9f369c2626c9",
+     "title": "culpa ex",
+     "recipe": [
+       "tempor",
+       "duis",
+       "incididunt",
+       "deserunt",
+       "eiusmod",
+       "nostrud",
+       "cillum"
+     ],
+     "ratings": 4.87,
+     "price": "$50.65",
+     "type": "veg",
+     "tags": [
+       "mutton",
+       "chicken",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/66/720/720"
+   },
+   {
+     "_id": "66f51153f8ec9c4f0413523c",
+     "guid": "872cd076-0420-4991-a1c6-480e1bc0820b",
+     "title": "ex in",
+     "recipe": [
+       "eiusmod",
+       "magna",
+       "quis",
+       "nulla",
+       "eiusmod",
+       "proident",
+       "dolore"
+     ],
+     "ratings": 2.34,
+     "price": "$11.48",
+     "type": "nonveg",
+     "tags": [
+       "starters",
+       "soups",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/62/720/720"
+   },
+   {
+     "_id": "66f5115372ecfa41a32a326b",
+     "guid": "15d98ddd-02cc-4a74-ab8e-6ba005df0444",
+     "title": "ea ad",
+     "recipe": [
+       "Lorem",
+       "est",
+       "mollit",
+       "labore",
+       "quis",
+       "ipsum",
+       "fugiat"
+     ],
+     "ratings": 4.1,
+     "price": "$155.91",
+     "type": "nonveg",
+     "tags": [
+       "chicken",
+       "chicken",
+       "mutton"
+     ],
+     "imgSrc": "https://picsum.photos/id/12/720/720"
+   },
+   {
+     "_id": "66f51153884290b6c465d3e7",
+     "guid": "964c2d3a-3cf7-4181-8803-ca06fe061df4",
+     "title": "laboris minim",
+     "recipe": [
+       "fugiat",
+       "excepteur",
+       "amet",
+       "veniam",
+       "magna",
+       "commodo",
+       "eu"
+     ],
+     "ratings": 2.07,
+     "price": "$111.17",
+     "type": "veg",
+     "tags": [
+       "desserts",
+       "seafoods",
+       "starters"
+     ],
+     "imgSrc": "https://picsum.photos/id/18/720/720"
+   },
+   {
+     "_id": "66f51153368105031d37955a",
+     "guid": "d6541325-9d19-4cc0-8b5b-585e5976ec71",
+     "title": "nostrud ipsum",
+     "recipe": [
+       "adipisicing",
+       "labore",
+       "aliquip",
+       "ex",
+       "dolor",
+       "cupidatat",
+       "excepteur"
+     ],
+     "ratings": 3.35,
+     "price": "$17.59",
+     "type": "nonveg",
+     "tags": [
+       "desserts",
+       "meals",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/43/720/720"
+   },
+   {
+     "_id": "66f511533db7ce154a0026dc",
+     "guid": "484eb42c-f988-46b5-825e-7dd535e84dfe",
+     "title": "non sit",
+     "recipe": [
+       "amet",
+       "est",
+       "Lorem",
+       "ullamco",
+       "eiusmod",
+       "adipisicing",
+       "ad"
+     ],
+     "ratings": 2.44,
+     "price": "$126.16",
+     "type": "nonveg",
+     "tags": [
+       "mutton",
+       "mutton",
+       "soups"
+     ],
+     "imgSrc": "https://picsum.photos/id/15/720/720"
+   },
+   {
+     "_id": "66f511530a16e6f9dee08686",
+     "guid": "5d8cf471-3abd-4733-99e6-fa4d63e2b441",
+     "title": "reprehenderit reprehenderit",
+     "recipe": [
+       "esse",
+       "ea",
+       "culpa",
+       "amet",
+       "irure",
+       "in",
+       "adipisicing"
+     ],
+     "ratings": 2.48,
+     "price": "$166.72",
+     "type": "nonveg",
+     "tags": [
+       "starters",
+       "chicken",
+       "mutton"
+     ],
+     "imgSrc": "https://picsum.photos/id/6/720/720"
+   },
+   {
+     "_id": "66f51153e08b6a94db07b626",
+     "guid": "007ee37e-6833-4ac8-be87-62632e78ab18",
+     "title": "sit in",
+     "recipe": [
+       "ad",
+       "Lorem",
+       "Lorem",
+       "Lorem",
+       "enim",
+       "sit",
+       "ut"
+     ],
+     "ratings": 2.5,
+     "price": "$92.92",
+     "type": "nonveg",
+     "tags": [
+       "soups",
+       "desserts",
+       "meals"
+     ],
+     "imgSrc": "https://picsum.photos/id/92/720/720"
+   },
+   {
+     "_id": "66f5115374e329cb3eec4dfa",
+     "guid": "a2633b1b-2557-4758-8370-1e2a986941d6",
+     "title": "culpa dolore",
+     "recipe": [
+       "aliquip",
+       "velit",
+       "labore",
+       "nulla",
+       "aute",
+       "ex",
+       "labore"
+     ],
+     "ratings": 2.82,
+     "price": "$5.25",
+     "type": "nonveg",
+     "tags": [
+       "chicken",
+       "desserts",
+       "meals"
+     ],
+     "imgSrc": "https://picsum.photos/id/82/720/720"
+   },
+   {
+     "_id": "66f5115327a0cb5f4340535c",
+     "guid": "c44d9f3d-43a2-4ee4-98d3-57d3beb3483a",
+     "title": "voluptate ex",
+     "recipe": [
+       "enim",
+       "exercitation",
+       "amet",
+       "amet",
+       "ea",
+       "velit",
+       "eiusmod"
+     ],
+     "ratings": 3.58,
+     "price": "$15.31",
+     "type": "nonveg",
+     "tags": [
+       "meals",
+       "desserts",
+       "seafoods"
+     ],
+     "imgSrc": "https://picsum.photos/id/69/720/720"
+   },
+   {
+     "_id": "66f51153dd7f69cd2db50613",
+     "guid": "1efa8163-0445-4b62-8aed-115ed3eedbe9",
+     "title": "dolor cupidatat",
+     "recipe": [
+       "elit",
+       "eiusmod",
+       "quis",
+       "tempor",
+       "tempor",
+       "eu",
+       "deserunt"
+     ],
+     "ratings": 3,
+     "price": "$135.73",
+     "type": "veg",
+     "tags": [
+       "chicken",
+       "soups",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/40/720/720"
+   },
+   {
+     "_id": "66f5115312b29d5e38c13b82",
+     "guid": "8243a677-954a-42cc-a904-a9848fd125cd",
+     "title": "laborum elit",
+     "recipe": [
+       "id",
+       "commodo",
+       "reprehenderit",
+       "ut",
+       "aliqua",
+       "dolor",
+       "do"
+     ],
+     "ratings": 3.07,
+     "price": "$21.35",
+     "type": "veg",
+     "tags": [
+       "seafoods",
+       "soups",
+       "seafoods"
+     ],
+     "imgSrc": "https://picsum.photos/id/42/720/720"
+   },
+   {
+     "_id": "66f511537458a7d1c36da0ba",
+     "guid": "2f791339-df13-4c9c-82aa-b105749c7625",
+     "title": "ex commodo",
+     "recipe": [
+       "minim",
+       "esse",
+       "cillum",
+       "reprehenderit",
+       "cupidatat",
+       "esse",
+       "laboris"
+     ],
+     "ratings": 3.85,
+     "price": "$68.45",
+     "type": "veg",
+     "tags": [
+       "meals",
+       "meals",
+       "mutton"
+     ],
+     "imgSrc": "https://picsum.photos/id/30/720/720"
+   },
+   {
+     "_id": "66f51153229df01d389107ac",
+     "guid": "b03b3649-b955-41a0-aa88-4b17cd85c750",
+     "title": "mollit sint",
+     "recipe": [
+       "nostrud",
+       "cupidatat",
+       "enim",
+       "tempor",
+       "minim",
+       "tempor",
+       "labore"
+     ],
+     "ratings": 2.4,
+     "price": "$59.25",
+     "type": "nonveg",
+     "tags": [
+       "starters",
+       "soups",
+       "mutton"
+     ],
+     "imgSrc": "https://picsum.photos/id/24/720/720"
+   },
+   {
+     "_id": "66f5115353f9b9158c653e83",
+     "guid": "d8e54568-1de9-48a2-9d9a-5f438c8c38e6",
+     "title": "pariatur consectetur",
+     "recipe": [
+       "laboris",
+       "proident",
+       "voluptate",
+       "in",
+       "Lorem",
+       "laboris",
+       "id"
+     ],
+     "ratings": 4.6,
+     "price": "$120.58",
+     "type": "nonveg",
+     "tags": [
+       "chicken",
+       "chicken",
+       "soups"
+     ],
+     "imgSrc": "https://picsum.photos/id/39/720/720"
+   },
+   {
+     "_id": "66f511534da0fb8eac859b4a",
+     "guid": "7f63847a-fed8-4f90-98ba-c0c807d1f60f",
+     "title": "fugiat irure",
+     "recipe": [
+       "aute",
+       "reprehenderit",
+       "laboris",
+       "minim",
+       "minim",
+       "sint",
+       "laboris"
+     ],
+     "ratings": 3.31,
+     "price": "$153.73",
+     "type": "veg",
+     "tags": [
+       "mutton",
+       "seafoods",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/45/720/720"
+   },
+   {
+     "_id": "66f5115339218850e96ca849",
+     "guid": "80e77a54-b3d1-42c5-b1cb-b7a8f7161b4a",
+     "title": "est minim",
+     "recipe": [
+       "incididunt",
+       "sunt",
+       "officia",
+       "cillum",
+       "incididunt",
+       "et",
+       "esse"
+     ],
+     "ratings": 3.2,
+     "price": "$143.04",
+     "type": "nonveg",
+     "tags": [
+       "mutton",
+       "meals",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/6/720/720"
+   },
+   {
+     "_id": "66f511533f26c30079e1b1ec",
+     "guid": "d0b3704e-80d9-4df2-8917-dbf04b814469",
+     "title": "fugiat ipsum",
+     "recipe": [
+       "velit",
+       "id",
+       "fugiat",
+       "minim",
+       "mollit",
+       "sit",
+       "ad"
+     ],
+     "ratings": 4.36,
+     "price": "$81.36",
+     "type": "veg",
+     "tags": [
+       "soups",
+       "chicken",
+       "starters"
+     ],
+     "imgSrc": "https://picsum.photos/id/95/720/720"
+   },
+   {
+     "_id": "66f5115356760df6fd98671e",
+     "guid": "9aa7dd09-c048-496f-8a90-e01f801eb9df",
+     "title": "in adipisicing",
+     "recipe": [
+       "in",
+       "incididunt",
+       "tempor",
+       "excepteur",
+       "reprehenderit",
+       "aliqua",
+       "adipisicing"
+     ],
+     "ratings": 2.56,
+     "price": "$48.86",
+     "type": "nonveg",
+     "tags": [
+       "drinks",
+       "meals",
+       "meals"
+     ],
+     "imgSrc": "https://picsum.photos/id/14/720/720"
+   },
+   {
+     "_id": "66f51153ae21091801dec975",
+     "guid": "324a6fa1-40ee-4326-8ac7-2561df0c0bff",
+     "title": "aliqua labore",
+     "recipe": [
+       "aliquip",
+       "duis",
+       "anim",
+       "duis",
+       "velit",
+       "irure",
+       "consequat"
+     ],
+     "ratings": 2.9,
+     "price": "$16.63",
+     "type": "nonveg",
+     "tags": [
+       "chicken",
+       "drinks",
+       "desserts"
+     ],
+     "imgSrc": "https://picsum.photos/id/89/720/720"
+   },
+   {
+     "_id": "66f51153ff57ec69705d83ed",
+     "guid": "bc59bf6a-562d-4c91-b1d5-6df9bc5116b8",
+     "title": "ipsum consectetur",
+     "recipe": [
+       "pariatur",
+       "elit",
+       "ipsum",
+       "adipisicing",
+       "velit",
+       "incididunt",
+       "ex"
+     ],
+     "ratings": 2.13,
+     "price": "$98.50",
+     "type": "nonveg",
+     "tags": [
+       "desserts",
+       "mutton",
+       "meals"
+     ],
+     "imgSrc": "https://picsum.photos/id/88/720/720"
+   },
+   {
+     "_id": "66f51153d0bed9d35eda58ae",
+     "guid": "4962506c-6fd2-4689-85f6-bd4c3cb5cfab",
+     "title": "dolor cillum",
+     "recipe": [
+       "eu",
+       "est",
+       "nulla",
+       "labore",
+       "consequat",
+       "nostrud",
+       "do"
+     ],
+     "ratings": 4.43,
+     "price": "$138.10",
+     "type": "nonveg",
+     "tags": [
+       "soups",
+       "drinks",
+       "drinks"
+     ],
+     "imgSrc": "https://picsum.photos/id/2/720/720"
+   },
+   {
+     "_id": "66f51153c646d72681ecb3ac",
+     "guid": "a5c91bdb-99cb-4424-a541-21f76c810adb",
+     "title": "nostrud anim",
+     "recipe": [
+       "eiusmod",
+       "sunt",
+       "ut",
+       "magna",
+       "irure",
+       "deserunt",
+       "ex"
+     ],
+     "ratings": 3.06,
+     "price": "$40.30",
+     "type": "nonveg",
+     "tags": [
+       "soups",
+       "desserts",
+       "desserts"
+     ],
+     "imgSrc": "https://picsum.photos/id/64/720/720"
+   },
+   {
+     "_id": "66f51153e2acb07aca089a85",
+     "guid": "122e86cc-6b97-4d23-a690-fe115364cf46",
+     "title": "laborum aliquip",
+     "recipe": [
+       "pariatur",
+       "anim",
+       "consequat",
+       "commodo",
+       "aliqua",
+       "minim",
+       "qui"
+     ],
+     "ratings": 4.43,
+     "price": "$58.12",
+     "type": "nonveg",
+     "tags": [
+       "soups",
+       "drinks",
+       "drinks"
+     ],
+     "imgSrc": "https://picsum.photos/id/98/720/720"
+   },
+   {
+     "_id": "66f5115360755f7de5c2c707",
+     "guid": "3d4a3181-d13a-48ca-a511-ccbbc5fd775e",
+     "title": "in in",
+     "recipe": [
+       "occaecat",
+       "voluptate",
+       "qui",
+       "quis",
+       "deserunt",
+       "anim",
+       "Lorem"
+     ],
+     "ratings": 2.02,
+     "price": "$185.54",
+     "type": "nonveg",
+     "tags": [
+       "drinks",
+       "drinks",
+       "mutton"
+     ],
+     "imgSrc": "https://picsum.photos/id/79/720/720"
+   },
+   {
+     "_id": "66f5115315fc4b6748644d12",
+     "guid": "67f0d0f6-a1eb-4681-91ec-c86f920c3cd5",
+     "title": "in non",
+     "recipe": [
+       "occaecat",
+       "mollit",
+       "ut",
+       "velit",
+       "pariatur",
+       "amet",
+       "do"
+     ],
+     "ratings": 4.67,
+     "price": "$1.87",
+     "type": "nonveg",
+     "tags": [
+       "drinks",
+       "drinks",
+       "seafoods"
+     ],
+     "imgSrc": "https://picsum.photos/id/49/720/720"
+   },
+   {
+     "_id": "66f51153dcce744b001d34d1",
+     "guid": "1ef651c1-da41-4082-aa51-4a3f2375a007",
+     "title": "exercitation et",
+     "recipe": [
+       "amet",
+       "excepteur",
+       "ut",
+       "adipisicing",
+       "ea",
+       "elit",
+       "est"
+     ],
+     "ratings": 3.95,
+     "price": "$109.51",
+     "type": "nonveg",
+     "tags": [
+       "starters",
+       "chicken",
+       "seafoods"
+     ],
+     "imgSrc": "https://picsum.photos/id/85/720/720"
+   },
+   {
+     "_id": "66f51153bb1a3070420482a6",
+     "guid": "8b4f551a-9e00-4a2e-a0a7-0b944cd3121b",
+     "title": "ut tempor",
+     "recipe": [
+       "velit",
+       "ut",
+       "qui",
+       "consectetur",
+       "veniam",
+       "exercitation",
+       "tempor"
+     ],
+     "ratings": 4.51,
+     "price": "$20.34",
+     "type": "veg",
+     "tags": [
+       "drinks",
+       "starters",
+       "seafoods"
+     ],
+     "imgSrc": "https://picsum.photos/id/74/720/720"
+   },
+   {
+     "_id": "66f51153cd0658e50304f8ec",
+     "guid": "d882fb5a-1216-49dc-bd87-683df6c8892d",
+     "title": "ut incididunt",
+     "recipe": [
+       "tempor",
+       "officia",
+       "aliqua",
+       "fugiat",
+       "pariatur",
+       "deserunt",
+       "amet"
+     ],
+     "ratings": 3.63,
+     "price": "$197.13",
+     "type": "veg",
+     "tags": [
+       "starters",
+       "starters",
+       "drinks"
+     ],
+     "imgSrc": "https://picsum.photos/id/77/720/720"
+   },
+   {
+     "_id": "66f51153c8160390137749e0",
+     "guid": "749f3570-83b7-4007-b2d9-ffd48c52d71e",
+     "title": "officia eiusmod",
+     "recipe": [
+       "ea",
+       "non",
+       "sunt",
+       "qui",
+       "commodo",
+       "laboris",
+       "in"
+     ],
+     "ratings": 3.16,
+     "price": "$90.81",
+     "type": "nonveg",
+     "tags": [
+       "desserts",
+       "starters",
+       "meals"
+     ],
+     "imgSrc": "https://picsum.photos/id/15/720/720"
+   },
+   {
+     "_id": "66f511539f307405b7cc6e95",
+     "guid": "1f695163-5c0e-4aa1-9e6a-c37e3ccf7f7c",
+     "title": "minim officia",
+     "recipe": [
+       "aute",
+       "ipsum",
+       "eu",
+       "officia",
+       "do",
+       "aliqua",
+       "ullamco"
+     ],
+     "ratings": 3.55,
+     "price": "$31.35",
+     "type": "nonveg",
+     "tags": [
+       "mutton",
+       "chicken",
+       "drinks"
+     ],
+     "imgSrc": "https://picsum.photos/id/54/720/720"
+   },
+   {
+     "_id": "66f51153bac44c5a1cf4e50f",
+     "guid": "07ab5fe5-9a36-4c0b-914e-590d791a0d16",
+     "title": "ad ipsum",
+     "recipe": [
+       "enim",
+       "elit",
+       "nisi",
+       "id",
+       "et",
+       "dolore",
+       "laboris"
+     ],
+     "ratings": 2.35,
+     "price": "$186.24",
+     "type": "nonveg",
+     "tags": [
+       "desserts",
+       "seafoods",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/41/720/720"
+   },
+   {
+     "_id": "66f51153e3026c4f110686ba",
+     "guid": "d7282583-d129-4a22-a387-bec880156872",
+     "title": "amet nisi",
+     "recipe": [
+       "officia",
+       "enim",
+       "in",
+       "eiusmod",
+       "dolore",
+       "minim",
+       "magna"
+     ],
+     "ratings": 3.41,
+     "price": "$188.43",
+     "type": "veg",
+     "tags": [
+       "chicken",
+       "mutton",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/94/720/720"
+   },
+   {
+     "_id": "66f5115338ed6e037ab6e889",
+     "guid": "98bda04c-36c2-4e12-b0b0-6132e3a42522",
+     "title": "pariatur nostrud",
+     "recipe": [
+       "veniam",
+       "cupidatat",
+       "est",
+       "ex",
+       "commodo",
+       "aute",
+       "dolor"
+     ],
+     "ratings": 4.67,
+     "price": "$193.40",
+     "type": "veg",
+     "tags": [
+       "desserts",
+       "desserts",
+       "desserts"
+     ],
+     "imgSrc": "https://picsum.photos/id/36/720/720"
+   },
+   {
+     "_id": "66f51153fb3aced1bdbe6104",
+     "guid": "f43676e0-ef71-41d2-b583-fce92c240641",
+     "title": "est laboris",
+     "recipe": [
+       "sunt",
+       "non",
+       "tempor",
+       "proident",
+       "esse",
+       "tempor",
+       "qui"
+     ],
+     "ratings": 4.48,
+     "price": "$112.44",
+     "type": "veg",
+     "tags": [
+       "chicken",
+       "starters",
+       "meals"
+     ],
+     "imgSrc": "https://picsum.photos/id/88/720/720"
+   },
+   {
+     "_id": "66f511531f5bd33319448169",
+     "guid": "a3c27133-914b-4e33-b605-cac23a11317a",
+     "title": "cupidatat deserunt",
+     "recipe": [
+       "irure",
+       "ex",
+       "esse",
+       "quis",
+       "dolor",
+       "sit",
+       "pariatur"
+     ],
+     "ratings": 2.49,
+     "price": "$147.64",
+     "type": "nonveg",
+     "tags": [
+       "meals",
+       "drinks",
+       "desserts"
+     ],
+     "imgSrc": "https://picsum.photos/id/49/720/720"
+   },
+   {
+     "_id": "66f511530f32345fea386245",
+     "guid": "f359f653-0a2a-4d9d-b3df-965ba7087d14",
+     "title": "officia ipsum",
+     "recipe": [
+       "minim",
+       "commodo",
+       "culpa",
+       "cupidatat",
+       "sunt",
+       "dolor",
+       "sunt"
+     ],
+     "ratings": 4.48,
+     "price": "$87.12",
+     "type": "veg",
+     "tags": [
+       "mutton",
+       "starters",
+       "chicken"
+     ],
+     "imgSrc": "https://picsum.photos/id/97/720/720"
+   },
+   {
+     "_id": "66f511530233a4a2b3a45580",
+     "guid": "306b2d68-7e0f-41be-8181-47ae82dd4679",
+     "title": "proident do",
+     "recipe": [
+       "aliqua",
+       "cupidatat",
+       "ipsum",
+       "excepteur",
+       "officia",
+       "reprehenderit",
+       "enim"
+     ],
+     "ratings": 3.55,
+     "price": "$24.79",
+     "type": "veg",
+     "tags": [
+       "drinks",
+       "desserts",
+       "desserts"
+     ],
+     "imgSrc": "https://picsum.photos/id/88/720/720"
+   },
+   {
+     "_id": "66f511539cab4246dc251dfe",
+     "guid": "30cc608c-0389-4c92-be2f-1c65b66cfd86",
+     "title": "dolore exercitation",
+     "recipe": [
+       "nisi",
+       "veniam",
+       "in",
+       "exercitation",
+       "magna",
+       "ullamco",
+       "cupidatat"
+     ],
+     "ratings": 4.25,
+     "price": "$165.38",
+     "type": "nonveg",
+     "tags": [
+       "meals",
+       "desserts",
+       "drinks"
+     ],
+     "imgSrc": "https://picsum.photos/id/28/720/720"
+   },
+   {
+     "_id": "66f511531be411f96816ff1f",
+     "guid": "1113d0b9-96ac-459e-bfa7-9fc9b9a62481",
+     "title": "non id",
+     "recipe": [
+       "et",
+       "mollit",
+       "amet",
+       "excepteur",
+       "dolore",
+       "aliqua",
+       "eiusmod"
+     ],
+     "ratings": 4.79,
+     "price": "$21.23",
+     "type": "veg",
+     "tags": [
+       "chicken",
+       "meals",
+       "starters"
+     ],
+     "imgSrc": "https://picsum.photos/id/57/720/720"
+   },
+   {
+     "_id": "66f5115344a92182fd21698d",
+     "guid": "30d5e859-6850-4876-9614-97f8b0cf2c0f",
+     "title": "cillum consequat",
+     "recipe": [
+       "cillum",
+       "culpa",
+       "et",
+       "exercitation",
+       "magna",
+       "pariatur",
+       "voluptate"
+     ],
+     "ratings": 4.86,
+     "price": "$14.02",
+     "type": "veg",
+     "tags": [
+       "starters",
+       "mutton",
+       "soups"
+     ],
+     "imgSrc": "https://picsum.photos/id/85/720/720"
+   },
+   {
+     "_id": "66f51153fd07a53d7aa067ba",
+     "guid": "5810fcc6-55fc-4431-915d-f5ec3171a647",
+     "title": "elit nostrud",
+     "recipe": [
+       "laboris",
+       "elit",
+       "veniam",
+       "sit",
+       "reprehenderit",
+       "est",
+       "ea"
+     ],
+     "ratings": 3.96,
+     "price": "$49.61",
+     "type": "nonveg",
+     "tags": [
+       "drinks",
+       "starters",
+       "seafoods"
+     ],
+     "imgSrc": "https://picsum.photos/id/64/720/720"
+   }
+ ]

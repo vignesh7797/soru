@@ -16,84 +16,11 @@
                 <p-tabMenu [model]="categories" [(activeItem)]="activeCategory"  />
             </div>
 
-            <div class="flex justify-between mt-5 w-11/12 px-8">
-                <div class="layout-wrapper">
-                    <p-tabMenu [model]="layouts" [(activeItem)]="activeLayout" >
-                        <ng-template pTemplate="item" let-item>
-                            <button class="layout-item" [ngClass]="item.image">
-                            </button>
-                        </ng-template>
-                    </p-tabMenu>
-                </div>
-                <div class="pagination">
-                    <p-paginator 
-                        (onPageChange)="onPageChange($event)" 
-                        [first]="first"
-                        [rows]="rows" 
-                        [totalRecords]="100" />
-                </div>
-            </div>
-
-            <div class="menu-items-wrapper">
-
-               @for(menu of menuItems; track menu; let i = $index){
-                @if(activeLayout.name == 'list'){
-
-                    <div class="menu-item-list flex justify-between w-full">
-                        <p>{{i+1}}.&nbsp;</p>
-                        <p class="label">Recipe Title</p>
-                        <p class="dash"></p>
-                        <p class="price">$1.00</p>
-                    </div>
-
-                }@else if (activeLayout.name == 'grid') {
-
-                    <div class="menu-item">
-                        <div class="mask">
-                            <div class="p-2">
-                                <p class="recipe-title">Title</p>
-                                <p class="recipe-detail">Recipe</p>
-                                <div class="veg"></div>
-                                <p class="rating">
-                                    <span class="material-icons"> star </span>
-                                    <span class="material-icons"> star </span>
-                                    <span class="material-icons"> star </span>
-                                    <span class="material-icons"> star </span>
-                                </p>
-                              </div>
-                      
-                              <div class="flex justify-end ">
-                                <button class="quick_icons">
-                                  <span class="material-symbols-outlined"> favorite </span>
-                                </button>
-                                <button class="quick_icons">
-                                  <span class="material-symbols-rounded"> shopping_cart </span>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-
-                }
-               }
-            </div>
-
-            <div class="flex justify-between mt-5 w-11/12 px-8">
-                <div class="layout-wrapper">
-                    <p-tabMenu [model]="layouts" [(activeItem)]="activeLayout" >
-                        <ng-template pTemplate="item" let-item>
-                            <button class="layout-item" [ngClass]="item.image">
-                            </button>
-                        </ng-template>
-                    </p-tabMenu>
-                </div>
-                <div class="pagination">
-                    <p-paginator 
-                        (onPageChange)="onPageChange($event)" 
-                        [first]="first"
-                        [rows]="rows" 
-                        [totalRecords]="100" />
-                </div>
+            <div class="w-full">
+                <app-menu-list></app-menu-list>
             </div>
         </div>
     </section>
+
+    <app-footer [feedback]="true"></app-footer>
 </div>

@@ -1,0 +1,66 @@
+.menu-list{
+    .p-dataview{
+        .p-paginator{
+            @apply hidden;
+        }
+    
+        .p-dataview-content{
+            @apply bg-transparent
+        }
+    
+        .p-dataview-footer, .p-dataview-header{
+            @apply bg-transparent;
+            .p-paginator{
+                @apply block;
+            }
+        }
+    }
+
+    .layout-wrapper{
+        .p-tabmenuitem{
+
+            .layout-item{
+                @apply w-5 h-5 bg-no-repeat bg-center opacity-50;
+
+                &.grid{
+                    background-image: url('../../../assets/grid.svg');
+                }
+
+                &.list{
+                    background-image: url('../../../assets/list.svg');
+                }
+            }
+
+            &.p-highlight{
+                @apply border-b-2 border-amber-400;
+
+                .layout-item{
+                    @apply opacity-100;
+                }
+            }
+        } 
+    }
+
+    .tag{
+        @apply px-2 py-1 rounded-full  bg-green-200 bg-opacity-50 text-green-950 text-xs mr-1;
+    }
+
+    .rating{
+        @apply text-amber-400 mt-2 text-sm;
+    
+        span{
+            @apply text-lg;
+        }
+    }
+
+    .veg{
+        @apply mt-2 border-2 border-green-500 w-4 h-4 flex justify-center items-center after:content-[''] after:block after:h-2 after:w-2 after:bg-green-500  after:rounded-full;
+    }
+    .nonveg{
+        @apply mt-2 border-2 border-red-500 w-4 h-4 flex justify-center items-center after:content-[''] after:block after:h-2 after:w-2 after:bg-red-500  after:rounded-full;
+    }
+
+    .recipe-detail{
+        @apply text-xs font-light my-2 ;
+      }
+}

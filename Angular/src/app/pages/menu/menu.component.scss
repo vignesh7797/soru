@@ -21,39 +21,19 @@
             @apply mt-8;
         }
 
-        .layout-wrapper{
-            .p-tabmenuitem{
 
-                .layout-item{
-                    @apply w-5 h-5 bg-no-repeat bg-center opacity-50;
-    
-                    &.layout_1{
-                        background-image: url('../../../assets/layout_1.svg');
-                    }
-    
-                    &.layout_2{
-                        background-image: url('../../../assets/layout_2.svg');
-                    }
-                }
-
-                &.p-highlight{
-                    @apply border-b-2 border-amber-400;
-
-                    .layout-item{
-                        @apply opacity-100;
-                    }
-                }
-            } 
+        .p-tabmenu-nav{
+            @apply flex-wrap;
         }
 
         .menu-items-wrapper{
             @apply w-full p-8 flex flex-wrap justify-between gap-4;
 
             .menu-item{
-                @apply bg-gray-700 w-48 h-48;
+                @apply bg-no-repeat bg-cover w-60 h-60;
 
                 .mask{
-                    @apply w-full h-full bg-black bg-opacity-50 flex flex-col items-stretch;
+                    @apply w-full h-full bg-black bg-opacity-50 flex flex-col items-stretch justify-between;
                 }
 
                 .recipe-title{
@@ -61,7 +41,7 @@
                   }
                 
                   .recipe-detail{
-                    @apply text-xs font-light mt-2 text-white;
+                    @apply text-xs font-light mt-2 text-white truncate;
                   }
                 
                   .veg{

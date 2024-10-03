@@ -1,15 +1,18 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { BannerComponent } from '../../components/banner/banner.component';
 import { CommonModule } from '@angular/common';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { RippleModule } from 'primeng/ripple';
-import { PaginatorModule } from 'primeng/paginator';
 import { ApiService } from '../../services/api.service';
+import { FooterComponent } from "../../components/footer/footer.component";
+import { Menu } from '../../models/menu';
+import { PaginatorModule } from 'primeng/paginator';
+import { ButtonModule } from 'primeng/button';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { MenuListComponent } from '../../components/menu-list/menu-list.component';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [BannerComponent, CommonModule, TabMenuModule, RippleModule, PaginatorModule],
+  imports: [CommonModule, FooterComponent, BannerComponent, PaginatorModule, ButtonModule, TabMenuModule, MenuListComponent],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
   encapsulation: ViewEncapsulation.None
@@ -39,16 +42,14 @@ export class MenuComponent {
 
   rows: number = 10;
 
-  menuItems: any[] = [];
+  menuItems: Menu[] = [];
+
+  layout:any = 'list';
 
   constructor(private apiService:ApiService){
     this.apiService.getMenuItems().subscribe((res:any) =>{
-      this.menuItems = res;
-
-      let category: any[] = []
-      this.menuItems.every(itm => category.push(itm.category));
-
-      console.log([... new Set(category)])
+      this.menuItems = res['default'];
+      this.menuItems.map(menu =>  menu.ratings = Math.round(menu.ratings))
     })
   }
 
@@ -70,5 +71,9 @@ export class MenuComponent {
   onPageChange(event: any) {
     this.first = event.first;
     this.rows = event.rows;
-}
+  }
+
+  getSeverity(e:any){
+
+  }
 }
