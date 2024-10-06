@@ -37,13 +37,13 @@
       </button>
     </li>
     <li class="">
-      <button class="menu-item" routerLink="menu" routerLinkActive="active">Menu</button>
+      <button class="menu-item" [class.fixed_active]="isFixed" routerLink="menu" routerLinkActive="active">Menu</button>
     </li>
     <li class="">
-      <button class="menu-item" routerLink="aboutUs" routerLinkActive="active">About Us</button>
+      <button class="menu-item" [class.fixed_active]="isFixed" routerLink="aboutUs" routerLinkActive="active">About Us</button>
     </li>
     <li class="">
-      <button class="menu-item" routerLink="contact" routerLinkActive="active">Contact</button>
+      <button class="menu-item" [class.fixed_active]="isFixed" routerLink="contact" routerLinkActive="active">Contact</button>
     </li>
   </ul>
   <div class="flex">

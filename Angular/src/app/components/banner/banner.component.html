@@ -1,7 +1,7 @@
 <div class="banner">
 
     @switch (type) {
-        @case ('menu') {
+        @case ('small') {
             <div *ngTemplateOutlet="menu"></div>
         }
         @default {
@@ -15,7 +15,7 @@
 <ng-template #menu>
     <div class="banner-menu">
         <div class="mask">
-            <h1 class="banner-header">Menu</h1>
+            <h1 class="banner-header">{{title | titlecase}}</h1>
             <p class="banner-subHeader"> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. officiis vero consequuntur!" </p>
         </div>
     </div>

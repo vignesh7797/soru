@@ -1,0 +1,104 @@
+.about-container{
+
+    .about-wrapper{
+        @apply relative -top-5 mx-auto w-full md:w-11/12 shadow-lg bg-[#353535] p-4 border-t-[5px] border-amber-400 rounded-t-md;
+
+        .about-title{
+            @apply text-2xl font-medium font-mono text-center my-5 flex flex-col items-center;
+
+            &::after{
+                content: '';
+                @apply block w-36 h-[2px] bg-amber-400 text-center;
+            }
+        }
+
+        .about-content{
+            @apply px-6 md:px-12 text-justify text-sm leading-6;
+        }
+
+        .about-story{
+            @apply md:grid mt-10 px-2 md:px-12 relative justify-start mb-16;
+
+            .story-banner{
+                @apply absolute w-[88%] md:w-[32rem] h-[95%] opacity-50 md:opacity-100 md:h-[30rem] bg-cover top-4 md:top-10 left-6 md:left-10 rounded-none md:rounded-lg shadow;
+
+                background-image: url('https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_1280.jpg')
+            }
+
+            .story-wrapper{
+                @apply relative z-10 bg-black bg-opacity-60 md:bg-transparent w-full md:w-3/5 border-[1rem] border-[#262626] p-2 md:p-6 justify-self-start md:justify-self-end;
+
+                h2{
+                    @apply text-2xl text-amber-400 text-center mb-4;
+                }
+
+                p{
+                    @apply text-justify pl-0 md:pl-16;
+                }
+            }
+        }
+
+        hr{
+            @apply border-[#626262];
+        }
+
+        .about-since{
+            @apply md:grid mt-10 px-2 md:px-12 relative justify-start mb-16;
+
+            .since-banner{
+                @apply absolute w-[94%] md:w-[32rem] h-[95%] md:h-[30rem] opacity-50 md:opacity-100 bg-cover top-4 md:top-10 right-6 md:right-10 rounded-none md:rounded-lg shadow;
+
+                background-image: url('https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_1280.jpg')
+            }
+
+            .since-wrapper{
+                @apply relative w-full md:w-3/5 border-[1rem] border-[#262626] p-6 justify-self-start md:bg-transparent bg-black bg-opacity-50 z-10;
+
+                h2{
+                    @apply text-2xl text-amber-400 text-center mb-4;
+                }
+
+                p{
+                    @apply text-justify pr-16;
+                }
+            }
+        }
+
+        .work-hours{
+            @apply mt-8 px-12;
+
+            .work-head{
+                @apply text-2xl text-amber-400 mb-4;
+            }
+        }
+
+        .accomadation{
+            @apply mt-24 px-12;
+
+            .acc-head{
+                @apply text-2xl text-amber-400 mb-4;
+            }
+
+            .acc-pill{
+                @apply flex relative items-center my-4;
+
+                .pill-label{
+                    @apply flex items-center pl-4 pr-7 rounded-2xl h-[50px] bg-[#626262] border-[1px] border-amber-400;
+                }
+
+                .pill-value{
+                    @apply h-16 aspect-square flex items-center justify-center rounded-full bg-amber-500 relative z-10 right-6 text-black text-2xl font-bold;
+                }
+            }
+        }
+    }
+
+    .service-head{
+        @apply text-2xl font-medium font-mono text-center my-5 flex flex-col items-center;
+
+        &::after{
+            content: '';
+            @apply block w-36 h-[2px] bg-amber-400 text-center;
+        }
+    }
+}
