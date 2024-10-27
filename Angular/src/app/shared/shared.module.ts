@@ -10,6 +10,8 @@ import { PaginatorModule } from 'primeng/paginator';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
 import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   imports: [
@@ -21,6 +23,8 @@ import { FloatLabelModule } from 'primeng/floatlabel';
     PaginatorModule,
     ButtonModule,
     FloatLabelModule,
+    InputGroupModule,
+    ToastModule
   ],
   exports: [
     CommonModule,
@@ -34,6 +38,8 @@ import { FloatLabelModule } from 'primeng/floatlabel';
     PaginatorModule,
     ButtonModule,
     FloatLabelModule,
+    InputGroupModule,
+    ToastModule
   ],
   providers: [],
 })
