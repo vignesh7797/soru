@@ -1,0 +1,80 @@
+<div class="dashboard">
+    <h1 class="title">Hello, <span>John Vicky!</span></h1>
+    <p class="desc">
+        On your My Account Dashboard, you can see a summary of your recent account activity and update your account details. Click a link below to view or modify your information.
+    </p>
+
+    <div class="summary">
+        <div class="summary-card">
+            <div class="header">
+                <p>Account</p>
+                <a routerLink="/account/profile">
+                    <span class="material-icons-round">
+                        edit
+                    </span>
+                </a>
+            </div>
+            <hr class="my-4"/>
+            <ul class="summary-list">
+                <li>
+                    Jhon Vicky
+                </li>
+                <li>
+                    jhon_vicky&commat;gmail.com
+                </li>
+                <li>
+                    <a routerLink="/account/passwordChange" class="link">Change Password</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="summary-card">
+            <div class="header">
+                <p>Address</p>
+                <a routerLink="/account/address">
+                    <span class="material-icons-round">
+                        edit
+                    </span>
+                </a>
+            </div>
+            <hr class="my-4"/>
+            <ul class="summary-list">
+                <li>
+                    Billing Address
+                <li>
+                    Shipping Address
+                </li>
+            </ul>
+        </div>
+
+        <div class="summary-card">
+            <div class="header">
+                <p>Orders</p>
+                <a routerLink="/account/orders">
+                    <span class="material-icons-round">
+                        edit
+                    </span>
+                </a>
+            </div>
+            <hr class="my-4"/>
+            <ul class="summary-list">
+                <li>
+                    Completed
+                    <p-progressBar [value]="completed" [style]="{'height': '6px'}" [showValue]="false" color="#fbbf24bb" styleClass="mt-2" />
+                </li>
+                <li>
+                    Processing
+                    <p-progressBar [value]="processing" [style]="{'height': '6px'}" [showValue]="false" color="#fbbf24bb" styleClass="mt-2" />
+                </li>
+                <li>
+                    On Hold
+                    <p-progressBar [value]="onHold" [style]="{'height': '6px'}" [showValue]="false" color="#fbbf24bb" styleClass="mt-2" />
+                </li>
+                <li>
+                    Refunded
+                    <p-progressBar [value]="rejected" [style]="{'height': '6px'}" [showValue]="false" color="#fbbf24bb" styleClass="mt-2" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

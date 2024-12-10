@@ -1,0 +1,23 @@
+.verify-container{
+    @apply mx-auto mt-10 md:mt-20 w-full md:max-w-[1080px] bg-[#353535] p-4 md:p-6 flex md:flex-row flex-col;
+
+    .verify-banner{
+        @apply bg-[url('https://cdn.pixabay.com/photo/2017/07/15/13/45/french-restaurant-2506490_1280.jpg')] w-full bg-cover bg-center rounded-l-lg;
+    }
+
+    .verify-form{
+        @apply p-4 md:p-10 w-full border-[1px] border-[#626262] rounded-r-lg min-h-[32rem] flex flex-col justify-center items-center;
+
+        .verify-title{
+            @apply text-2xl font-medium text-center md:text-left;
+        }
+
+        .verify-info{
+            @apply text-sm mt-6 leading-6 text-center md:text-left;
+        }
+
+        .verify-link{
+            @apply text-amber-400 hover:underline;
+        }
+    }
+}

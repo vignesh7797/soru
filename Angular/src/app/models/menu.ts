@@ -7,5 +7,6 @@ export interface Menu{
     price: string;
     type: 'veg'|'nonveg';
     tags: string[];
-    imgSrc: string
+    imgSrc: string;
+    stock? : 'INSTOCK' | 'LOWSTOCK' | 'OUTOFSTOCK';
 }

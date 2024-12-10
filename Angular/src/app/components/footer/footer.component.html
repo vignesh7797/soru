@@ -51,33 +51,31 @@
                     <div class="footer-feedback">
                         <p class="footer-feedback-head">Feedback</p>
                         <p class="footer-feedback-subhead mb-4">We want your feedback about everything</p>
-                        <div class="footer-feedback-form">
-                            <div class="flex flex-col gap-2">
-                                <p-floatLabel>
-                                    <input #emailInp="ngModel" class="h-10 w-full bg-transparent border-[1px] border-gray-400 px-3" pInputText variant="outlined" aria-describedby="email-help"  [ngClass]="(emailInp.control.dirty && emailInp.control.invalid && emailInp.control.errors) ? 'ng-invalid ng-dirty border-red-500' : ''" id="email" type="email" [(ngModel)]="email" required />
-                                    <label for="email">E-mail</label>
-                                </p-floatLabel>
-                                @if(emailInp.control.dirty && emailInp.control.invalid){
-                                    <small id="email-help" class="text-xs text-red-500">
-                                        Enter your valid email.
-                                    </small>
-                                }
-                            </div>
-        
-                            <div class="flex flex-col gap-2 mt-6">
-                                <p-floatLabel>
-                                    <textarea #msgInp="ngModel" class="w-full bg-transparent border-[1px] border-gray-400 px-3" pInputTextarea rows="5" cols="30"  variant="outlined" aria-describedby="msg-help"  [ngClass]="(msgInp.control.dirty && msgInp.control.invalid && msgInp.control.errors) ? 'ng-invalid ng-dirty border-red-500' : ''" id="message" type="message" [(ngModel)]="message" required></textarea>
-                                    <label for="message">Message for us</label>
-                                </p-floatLabel>
-                                @if(msgInp.control.dirty && msgInp.control.invalid){
-                                    <small id="msg-help" class="text-xs text-red-500">
-                                        Enter your valid email.
-                                    </small>
-                                }
-                            </div>
-                            
-                            
-                        </div>
+                            <form class="footer-feedback-form">
+                                <div class="flex flex-col gap-2">
+                                    <p-floatLabel>
+                                        <input class="soru-input" #emailInp="ngModel" name="email" pInputText variant="outlined" aria-describedby="email-help"  [ngClass]="(emailInp.control.dirty && emailInp.control.invalid && emailInp.control.errors) ? 'ng-invalid ng-dirty border-red-500' : ''" id="email" type="email" [(ngModel)]="email" required />
+                                        <label for="email">E-mail</label>
+                                    </p-floatLabel>
+                                    @if(emailInp.control.dirty && emailInp.control.invalid){
+                                        <small id="email-help" class="text-xs text-red-500">
+                                            Enter your valid email.
+                                        </small>
+                                    }
+                                </div>
+            
+                                <div class="flex flex-col gap-2 mt-6">
+                                    <p-floatLabel>
+                                        <textarea #msgInp="ngModel" name="message" class="soru-input" pInputTextarea rows="5" cols="30"  variant="outlined" aria-describedby="msg-help"  [ngClass]="(msgInp.control.dirty && msgInp.control.invalid && msgInp.control.errors) ? 'ng-invalid ng-dirty border-red-500' : ''" id="message" type="message" [(ngModel)]="message" required></textarea>
+                                        <label for="message">Message for us</label>
+                                    </p-floatLabel>
+                                    @if(msgInp.control.dirty && msgInp.control.invalid){
+                                        <small id="msg-help" class="text-xs text-red-500">
+                                            Enter your valid email.
+                                        </small>
+                                    }
+                                </div>
+                            </form>
                         <div class="flex items-end mt-6">
                             <button class="btn-primary btn-lg mb-2">
                                 Submit

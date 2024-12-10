@@ -1,0 +1,7 @@
+.faq-container{
+    @apply bg-zinc-800;
+
+    .faq-wrapper{
+        @apply max-w-[1080px] p-4 md:p-8 mx-auto;
+    }
+}

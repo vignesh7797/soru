@@ -1,5 +1,5 @@
 .menu-wrapper{
-    @apply w-full bg-cover bg-no-repeat p-6 bg-center;
+    @apply w-full bg-cover bg-no-repeat p-2 md:p-6 bg-center;
     background-image: url('../../../assets/bg_1.jpg');
 
     .mask{

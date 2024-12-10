@@ -1,0 +1,243 @@
+<div class="address-container">
+    <div class="flex justify-between items-center gap-4 mb-4">
+        <h1 class="title">
+            Address
+        </h1>
+        @if(!addressData[activeTabIndex].isEdit){
+            <button class="btn-primary" (click)="AddTab()">Add Address</button>
+        }
+    </div>
+    @if(isLoading){
+        <p-progressBar mode="indeterminate" color="#fbbf24" [style]="{ height: '6px' }" />
+    }@else {
+        <form [formGroup]="addressForm" (ngSubmit)="onSubmitAddress()">
+            <p-tabView [scrollable]="true" [(activeIndex)]="activeTabIndex">
+                    @for (tab of tabs; track $index) {
+                        <p-tabPanel formArrayName="items">
+                            <ng-template pTemplate="header">
+                                <p class="flex items-center gap-2 text-nowrap overflow-hidden text-ellipsis" (click)="onTabChange($event)">
+                                    <span class="material-symbols-rounded">{{tab.icon}}</span>
+                                    <span>{{tab.title}}</span>
+                                </p>
+                            </ng-template>
+            
+                          @if(addressData[$index].isEdit){
+                            <div [formGroupName]="$index" class="mt-6 flex flex-wrap gap-8">
+                                <div class="w-full sm:w-auto">
+                                    <p-floatLabel>
+                                        <input class="soru-input" pInputText id="firstname" formControlName="firstname" />
+                                        <label for="firstname">First Name*</label>
+                                    </p-floatLabel>
+                                    @if ((getControl($index, 'firstname').touched ||
+                                    getControl($index, 'firstname').dirty) && getControl($index, 'firstname').errors) {
+                                    <p class="error-text">Name is required*</p>
+                                    }
+                                </div>
+    
+                                <div class="w-full sm:w-auto">
+                                    <p-floatLabel>
+                                        <input class="soru-input" pInputText id="lastname" formControlName="lastname" />
+                                        <label for="lastname">Last Name*</label>
+                                    </p-floatLabel>
+                                    @if ((getControl($index, 'lastname').touched ||
+                                    getControl($index, 'lastname').dirty) && getControl($index, 'lastname').errors) {
+                                    <p class="error-text">Name is required*</p>
+                                    }
+                                </div>
+    
+                                <div class="w-full sm:w-auto">
+                                    <p-floatLabel>
+                                        <input class="soru-input" pInputText id="email" formControlName="email" />
+                                        <label for="email">Email*</label>
+                                    </p-floatLabel>
+                                    @if ((getControl($index, 'email').touched  ||
+                                    getControl($index, 'email').dirty) && getControl($index, 'email').errors) {
+                                    <p class="error-text">Email is required*</p>
+                                    }
+                                </div>
+    
+                                <div class="w-full sm:w-auto">
+                                    <p-floatLabel>
+                                        <p-inputNumber formControlName="phone" mode="decimal" [useGrouping]="false" />
+                                        <label for="number-input">Phone*</label>
+                                    </p-floatLabel>
+                                    @if ((getControl($index, 'phone').touched ||
+                                    getControl($index, 'phone').dirty) && getControl($index, 'phone').errors) {
+                                    <p class="error-text">Phone is required*</p>
+                                    }
+                                </div>
+    
+                                <div class="w-full sm:w-auto sm:min-w-[214px] sm:max-w-[400px]">
+                                    <p-floatLabel>
+                                        <p-dropdown 
+                                        formControlName="country" 
+                                        [options]="countries"
+                                        optionLabel="name"
+                                        optionValue = "name"
+                                        [filter]="true"
+                                        filterBy="name" 
+                                        inputId="country">
+
+    
+                                            <ng-template let-country pTemplate="item">
+                                                <div class="flex align-items-center gap-2">
+                                                    <img 
+                                                        [src]="country.flag"
+                                                        class="rounded-full w-5 h-5"
+                                                        style="width: 18px" />
+                                                    <p class="w-full text-ellipsis overflow-hidden" [title]="country.name">{{ country.name }}</p>
+                                                </div>
+                                            </ng-template>
+                                    
+                                        </p-dropdown>
+                                        <label for="country">Select a Country</label>
+                                    </p-floatLabel>
+
+                                    @if ((getControl($index, 'country').touched ||
+                                    getControl($index, 'country').dirty) && getControl($index, 'country').errors) {
+                                    <p class="error-text">Country is required*</p>
+                                    }
+                                </div>
+
+
+                                <div class="w-full sm:w-auto">
+                                    <p-floatLabel>
+                                        <input class="soru-input" pInputText id="city" formControlName="city" />
+                                        <label for="city">City*</label>
+                                    </p-floatLabel>
+                                    @if ((getControl($index, 'city').touched ||
+                                    getControl($index, 'city').dirty) && getControl($index, 'city').errors) {
+                                    <p class="error-text">City is required*</p>
+                                    }
+                                </div>
+
+                                <div class="w-full sm:w-auto">
+                                    <p-floatLabel>
+                                        <input class="soru-input" pInputText id="place" formControlName="place" />
+                                        <label for="place">Place*</label>
+                                    </p-floatLabel>
+                                    @if ((getControl($index, 'place').touched ||
+                                    getControl($index, 'place').dirty) && getControl($index, 'place').errors) {
+                                    <p class="error-text">Place is required*</p>
+                                    }
+                                </div>
+
+                                <div class="w-full sm:w-auto">
+                                    <p-floatLabel>
+                                        <p-inputNumber formControlName="postal" mode="decimal" [useGrouping]="false" />
+                                        <label for="number-input">Postal Code*</label>
+                                    </p-floatLabel>
+                                    @if ((getControl($index, 'postal').touched ||
+                                    getControl($index, 'postal').dirty) && getControl($index, 'postal').errors) {
+                                    <p class="error-text">Postal Code is required*</p>
+                                    }
+                                </div>
+
+                                <div class="w-full sm:w-auto">
+                                    <p-floatLabel>
+                                        <textarea formControlName="address" id="float-input" rows="7" pInputTextarea>
+                                        </textarea>
+                                        <label for="float-input">Address*</label>
+                                    </p-floatLabel>
+
+                                    @if ((getControl($index, 'address').touched ||
+                                    getControl($index, 'address').dirty) && getControl($index, 'address').errors) {
+                                    <p class="error-text">Address is required*</p>
+                                    }
+                                </div>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <button type="button" class="btn-secondary w-fit mx-0 mt-4" (click)="onCancel()">Cancel</button>
+                                <button type="submit" class="btn-primary w-fit mx-0 mt-4">Submit</button>
+                            </div>
+                          }@else {
+                            <div class="relative">
+                                <button class="btn-icon absolute -right-5 -top-6" title="Edit" type="button" (click)="addressData[$index].isEdit = true">
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </button>
+
+                                <table class="address-table">
+                                    <tr>
+                                       <th>First Name</th>
+                                       <td>{{addressData[$index].firstname}}</td> 
+                                    </tr>
+                                    <tr>
+                                        <th>Last Name</th>
+                                        <td>{{addressData[$index].lastname}}</td> 
+                                     </tr>
+                                     <tr>
+                                        <th>Email</th>
+                                        <td>{{addressData[$index].email}}</td> 
+                                     </tr>
+                                     <tr>
+                                        <th>Phone Number</th>
+                                        <td>{{addressData[$index].phone}}</td> 
+                                     </tr>
+                                     <tr>
+                                        <th>Country</th>
+                                        <td>{{addressData[$index].country}}</td> 
+                                     </tr>
+                                     <tr>
+                                        <th>City</th>
+                                        <td>{{addressData[$index].city}}</td> 
+                                     </tr>
+                                     <tr>
+                                        <th>Place</th>
+                                        <td>{{addressData[$index].place}}</td> 
+                                     </tr>
+                                     <tr>
+                                        <th>Address</th>
+                                        <td>{{addressData[$index].address}}</td> 
+                                     </tr>
+                                     <tr>
+                                        <th>Postal Code</th>
+                                        <td>{{addressData[$index].postal}}</td> 
+                                     </tr>
+                                </table>
+                            </div> 
+                            
+                            
+                          }
+    
+                        </p-tabPanel>
+                    }
+            </p-tabView>
+        </form>
+    }
+
+</div>
+
+
+
+<p-dialog  [modal]="true" [(visible)]="visible">
+    <ng-template pTemplate="header">
+        <h1 class="font-bold text-xl">Add New Address</h1>
+    </ng-template>
+
+    <ng-template pTemplate="content">
+        <div class="w-full mt-6 px-2">
+            <form action="" (submit)="onAddTab()">
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="name" name="tab" [(ngModel)]="TabName" autofocus />
+                        <label for="name">Name*</label>
+                    </p-floatLabel>
+                    @if (!TabName) {
+                        <p class="error-text">Name is required*</p>
+                    }
+                </div>
+        
+                <div class="flex justify-end mt-6">
+                    <button type="submit" class="btn-primary">Add</button>
+                    <button type="button" class="btn-secondary" (click)="visible = false">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </ng-template>
+    
+</p-dialog>
+
+<p-toast/>

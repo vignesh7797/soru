@@ -1,7 +1,7 @@
 .contact-container{
 
     .contact-wrapper{
-        @apply relative -top-5 mx-auto w-full md:w-11/12 shadow-lg bg-[#353535] p-4 border-t-[5px] border-amber-400 rounded-t-md;
+        @apply max-w-[1240px] relative -top-5 mx-auto w-full md:w-11/12 shadow-lg bg-[#353535] p-4 border-t-[5px] border-amber-400 rounded-t-md;
 
         .contact-details{
             @apply w-full flex justify-around items-center;
@@ -18,19 +18,16 @@
             }
         }
 
-        hr{
-            @apply border-[#626262] my-8;
-        }
 
         .contact-form{
             @apply md:grid mt-10 px-2 md:px-12 relative justify-end mb-16;
 
             .form-banner{
-                @apply absolute w-[94%] md:w-[36rem] h-[95%] md:h-[32rem] opacity-50 md:opacity-100 bg-cover left-4 top-4 md:top-10 rounded-none md:rounded-lg shadow bg-[url('https://cdn.pixabay.com/photo/2016/11/30/14/08/cafe-1872888_1280.jpg')];
+                @apply absolute w-[94%] md:w-[40rem] h-[95%] md:h-[34rem] opacity-50 md:opacity-100 bg-cover left-7 top-4 md:top-10 rounded-none md:rounded-lg shadow bg-[url('https://cdn.pixabay.com/photo/2016/11/30/14/08/cafe-1872888_1280.jpg')];
             }
 
             .form-wrapper{
-                @apply relative z-10 bg-black bg-opacity-60 md:bg-transparent w-full md:w-full border-[1rem] border-[#262626] p-2 md:p-6 md:pl-28 justify-self-start md:justify-self-end;
+                @apply relative z-10 bg-black bg-opacity-60 md:bg-opacity-40 w-full md:w-full border-[1rem] border-[#262626] p-2 md:p-6 md:pl-28 justify-self-start md:justify-self-end;
 
                 h2{
                     @apply text-2xl text-amber-400 text-center mb-4;
@@ -44,17 +41,7 @@
                     }
 
 
-                    .contact-input, .p-inputtext{
-                        @apply min-h-10 w-full md:w-[400px] bg-[#353535] px-4 border-[#626262] border-[1px];
-                    }
-
-                    .p-inputwrapper, .p-inputnumber{
-                        @apply w-full;
-                    }
-
-                    .error-text{
-                        @apply text-red-400 text-sm;
-                    }
+                    
                 }
             }
         }

@@ -1,7 +1,7 @@
 .about-container{
 
     .about-wrapper{
-        @apply relative -top-5 mx-auto w-full md:w-11/12 shadow-lg bg-[#353535] p-4 border-t-[5px] border-amber-400 rounded-t-md;
+        @apply max-w-[1240px] relative -top-5 mx-auto w-full md:w-11/12 shadow-lg bg-[#353535] p-4 border-t-[5px] border-amber-400 rounded-t-md;
 
         .about-title{
             @apply text-2xl font-medium font-mono text-center my-5 flex flex-col items-center;

@@ -1,0 +1,48 @@
+.profile-container{
+    @apply  w-full;
+
+    .title{
+        @apply text-2xl font-semibold mb-6;
+    }
+
+    .profile-wrapper{
+        @apply flex flex-col md:flex-row gap-8 w-full items-center md:items-start;
+        
+        .prfile-pic{
+            @apply w-full aspect-square max-w-[20rem];
+        }
+    
+        .prfile-form{
+            @apply rounded-lg border-[1px] border-zinc-600 w-full md:w-fit py-4 px-8 h-fit ;
+    
+            .title{
+                @apply text-xl font-semibold mb-6;
+            }
+        }
+    }
+}
+
+.p-fileupload-buttonbar{
+    @apply hidden;
+}
+
+.p-fileupload-content{
+    @apply rounded-md aspect-square flex flex-col items-center justify-center bg-zinc-800 border-dashed border-2 border-zinc-500 border-opacity-50;
+
+    p-progressbar{
+        @apply hidden;
+    }
+
+    &.p-fileupload-highlight{
+        @apply bg-amber-400 bg-opacity-35;
+    }
+
+    .fileupload-btn{
+        @apply w-32 h-32 flex justify-center items-center rounded-full bg-[#353535] text-amber-400 text-opacity-50;
+
+        span{
+            @apply text-4xl;
+        }
+    }
+}
+

@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
-@import "primeng/resources/themes/lara-dark-blue/theme.css";
+@import "primeng/resources/themes/aura-dark-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
 
 @tailwind base;
 @tailwind components;
@@ -17,11 +18,27 @@ body{
 }
 
 .btn-primary{
-    @apply bg-amber-400 px-3 py-1 rounded shadow-md text-black hover:bg-amber-300 mx-2;
+    @apply bg-amber-400 px-3 py-2 rounded shadow-md text-black hover:bg-amber-300 mr-4;
 }
 
 .btn-secondary{
-    @apply bg-zinc-700 px-3 py-1 rounded shadow-md text-white text-sm hover:bg-zinc-600 mx-2;
+    @apply bg-zinc-700 px-3 py-2 rounded shadow-md text-white  hover:bg-zinc-600 mr-4;
+}
+
+.btn-danger{
+    @apply bg-red-700 px-3 py-2 rounded shadow-md text-zinc-200 hover:bg-red-600 mr-4;
+}
+
+.btn-large{
+    @apply w-full py-2 text-lg;
+}
+
+.btn-icon{
+    @apply rounded-full w-12 h-12 text-amber-400 hover:bg-amber-500 hover:bg-opacity-20  focus:bg-amber-400 focus:text-black flex items-center justify-center;
+}
+
+.btn-rounded{
+    @apply rounded-full;
 }
 
 .card{
@@ -37,7 +54,7 @@ body{
 }
 
 .btn-lg{
-    @apply px-4 py-2;
+    @apply px-4 py-2 text-nowrap;
 }
 
 .logo{
@@ -46,6 +63,38 @@ body{
     background-image: url('./assets/logo_big.png');
 }
 
+hr{
+    @apply border-[#626262] my-8;
+}
+
+.soru-input, .p-inputtext{
+    @apply min-h-10 w-full  bg-transparent px-4 border-[#626262] border-[1px] focus:outline-0 focus:border-amber-400 rounded-md;
+}
+
+form{
+    .p-inputtext{
+        @apply md:w-[400px];
+    }
+}
+
+.colspan-2{
+    @apply lg:col-span-2;
+}
+
+.colspan-2 .p-inputtext, .colspan-2 .soru-input{
+    @apply w-full;
+}
+
+.p-inputwrapper, .p-inputnumber, .p-calendar{
+    @apply w-full md:w-[400px];
+}
+
+
+
+
+.error-text{
+    @apply text-red-400 text-sm;
+}
 
 
 // Tab Menu
@@ -87,3 +136,337 @@ body{
         }
     }
 }
+
+.p-datepicker, .p-datepicker-header, .p-menu, .p-tieredmenu, .p-submenu-list{
+    @apply bg-[#353535];
+
+    .p-datepicker-current-day{
+        @apply text-amber-400 bg-amber-400 bg-opacity-20;
+    }
+
+    .p-datepicker-today span{
+        @apply text-amber-600;
+    }
+
+    .p-element{
+        @apply cursor-pointer;
+    }
+}
+
+.p-menuitem{
+    @apply py-2;
+}
+
+.p-dropdown{
+    .p-highlight{
+        @apply bg-amber-400 bg-opacity-20;
+    }
+}
+
+.p-inputwrapper-focus{
+    @apply outline-0 ring-0;
+}
+
+.p-inputgroup{
+    @apply items-center border-[#626262] border-[0.5px] rounded-lg h-[40px] md:w-[400px];
+
+    .p-dropdown{
+        @apply w-20 h-full items-center;
+
+        .p-dropdown-label{
+            @apply border-0;
+        }
+
+        .p-dropdown-trigger{
+            @apply w-8;
+        }
+
+        .p-dropdown-label{
+            @apply py-0 flex items-center;
+        }
+    }
+
+    p-dropdown.p-inputwrapper{
+        @apply w-1/5;
+    }
+
+    p-floatlabel, .p-float-label, .p-calendar{
+        @apply w-[80%] h-full;
+    }
+
+    .soru-input, .p-inputtext{
+        @apply border-0 min-h-8;
+    }
+    
+
+}
+
+//DropDown
+
+.p-dropdown{
+    @apply bg-transparent border-[#626262] border-[1px] w-full md:w-[400px];
+
+    .p-inputtext{
+        @apply border-0;
+    }
+
+    .p-dropdown-panel{
+        @apply bg-zinc-700;
+    }
+
+    .p-dropdown-header{
+        @apply bg-zinc-700 mb-5;
+
+        .p-dropdown-filter{
+            @apply bg-zinc-800 border-[#626262] border-[1px] focus:border-amber-400 focus:outline-0;
+        }
+    }
+}
+
+
+// Toast Message
+
+.p-toast-message-content{
+    @apply flex items-center;
+}   
+
+.p-toast-message-icon{
+    @apply text-xs;
+}
+
+.p-toast-detail{
+    @apply m-0;
+}
+
+
+.p-menu-overlay{
+    @apply w-60;
+}
+
+.menu-overlay-item{
+    @apply w-full flex items-center px-5 py-3 hover:bg-amber-400 hover:bg-opacity-20;
+}
+
+
+// Checkbox
+
+.p-checkbox-box{
+    @apply bg-zinc-800 scale-[0.8] border-[1px] border-zinc-400 border-opacity-50;
+
+    &.p-highlight{
+        @apply bg-amber-400;
+    }
+
+    &.p-focus{
+        @apply outline-none ring-0;
+    }
+}
+
+
+// Side bar
+
+.p-sidebar {
+    @apply bg-zinc-800;
+
+    .p-sidebar-header{
+        @apply flex justify-between border-b-[1px] border-[#353535] p-4;
+    }
+    
+    .side-menu{
+        @apply p-2;
+
+        .side-menu-list{
+
+            .side-menu-item{
+                @apply text-lg;
+
+                a{
+                    @apply hover:text-amber-400 hover:bg-amber-400 hover:bg-opacity-20 block w-full px-2 py-2 rounded-md;
+
+                    &.active{
+                        @apply text-amber-400 font-semibold;
+                    }
+                }
+            }
+        }
+    }
+
+    .p-sidebar-footer{
+        @apply border-t-[1px] border-[#353535] p-4
+    }
+}
+
+//Select Button
+
+.p-selectbutton{
+    @apply mx-auto w-fit;
+
+    .p-component{
+        @apply bg-zinc-800;
+
+        &.p-highlight::before{
+            @apply bg-[#353535];
+        }
+    }
+}
+
+// OTP
+
+.p-inputotp{
+    @apply gap-4 items-center justify-center;
+}
+
+.p-inputotp-input{
+    @apply aspect-square focus:outline-amber-400 md:w-12 max-w-12;
+}
+
+
+// Accordion
+
+.p-accordion-header-link{
+    @apply bg-[#353535];
+    border-radius : 0px !important;
+}
+
+.p-accordion-content{
+    @apply bg-[#424242] p-6;
+}
+
+
+.p-menuitem-active.p-highlight{
+
+    .p-menuitem-content{
+        .p-menuitem-link{
+            @apply bg-amber-400 bg-opacity-30;
+        }
+    }
+    
+    .p-submenu-list{
+        @apply rounded-lg py-2;
+
+        .p-menuitem{
+            @apply p-0;
+        }
+        .p-menuitem-link{
+            @apply bg-[#353535] hover:bg-[#424242] p-3;
+        }
+    }
+}
+
+
+// Tab View
+
+.p-tabview-ink-bar{
+    @apply bg-amber-400;
+}
+
+.p-tabview-nav-btn{
+    @apply bg-zinc-800;
+}
+
+.p-tabview-nav{
+    @apply bg-transparent;
+
+    .p-highlight{
+        
+        .p-tabview-nav-link{
+            @apply text-amber-400;
+        }
+    }
+
+    .p-tabview-nav-link{
+        @apply bg-transparent;
+    }
+}
+
+.p-tabview-panels{
+    @apply p-3 md:p-8 bg-transparent border-[1px] border-zinc-600 rounded-lg;
+}
+
+
+// Dialog Box
+
+.p-dialog-header{
+    @apply bg-[#353535];
+}
+
+.p-dialog-content{
+    @apply bg-[#353535];
+}
+
+//Badge
+
+.p-badge{
+    @apply bg-amber-400 text-black;
+}
+
+
+// Data View Layout
+
+.p-dataview-content{
+    @apply bg-[#353535];
+}
+
+.p-dataview-layout-options{
+    @apply bg-zinc-800 rounded p-1;
+
+    .p-button{
+        @apply w-10 h-8 rounded;
+    }
+
+    .p-highlight{
+        @apply bg-zinc-900;
+
+        &::before{
+            @apply bg-zinc-900;
+        }
+    }
+}
+
+
+// Table
+
+.p-datatable-header{
+    @apply bg-zinc-800;
+}
+
+.p-datatable-thead{
+    @apply border-b-[1px] border-zinc-500;
+    th{
+        @apply bg-zinc-800;
+    }
+}
+
+.p-datatable-tbody{
+    th, td{
+        @apply bg-zinc-700;
+    }
+}
+
+.p-datatable-footer{
+    @apply bg-zinc-800;
+}
+
+.p-sortable-column{
+
+    &.p-highlight{
+        @apply bg-amber-400 bg-opacity-15;
+    }
+
+    &:hover{
+        @apply bg-zinc-800;
+    }
+}
+
+
+// Rating
+
+.p-rating-icon-active{
+    path{
+        @apply fill-amber-400;
+    }
+}
+
+
+
+

@@ -1,0 +1,39 @@
+.login-container{
+    @apply mx-auto mt-10 md:mt-20 w-full md:max-w-[1080px] bg-[#353535] p-4 md:p-6 flex md:flex-row flex-col;
+
+    .login-banner{
+        @apply bg-[url('https://cdn.pixabay.com/photo/2017/07/15/13/45/french-restaurant-2506490_1280.jpg')] w-full bg-cover bg-center rounded-l-lg;
+    }
+
+    .login-form{
+        @apply p-4 md:p-10 w-full border-[1px] border-[#626262] rounded-r-lg;
+
+        .login-title{
+            @apply text-2xl font-medium text-center md:text-left;
+        }
+
+        .login-info{
+            @apply text-sm mt-6 leading-6 text-center md:text-left;
+        }
+
+        .login-link{
+            @apply text-amber-400 hover:underline;
+        }
+    }
+
+    .login-icon{
+        @apply w-10 h-10 rounded-full bg-cover bg-center mx-2;
+    }
+
+    .facebook{
+        @apply bg-[url('../../../assets/facebook.svg')] ;
+    }
+
+    .apple{
+        @apply bg-[url('../../../assets/apple.svg')] ;
+    }
+
+    .google{
+        @apply bg-[url('../../../assets/google.svg')] ;
+    }
+}

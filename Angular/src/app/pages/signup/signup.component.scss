@@ -1,0 +1,23 @@
+.signup-container{
+    @apply mx-auto mt-10 md:mt-20 w-full md:max-w-[1080px] bg-[#353535] p-4 md:p-6 flex md:flex-row flex-col;
+
+    .signup-banner{
+        @apply bg-[url('https://cdn.pixabay.com/photo/2019/02/21/19/00/restaurant-4011989_1280.jpg')] w-full bg-cover bg-center rounded-l-lg;
+    }
+
+    .signup-form{
+        @apply p-4 md:p-10 w-full border-[1px] border-[#626262] rounded-r-lg;
+
+        .signup-title{
+            @apply text-2xl font-medium text-center md:text-left;
+        }
+
+        .signup-info{
+            @apply text-sm mt-6 leading-6 text-center md:text-left;
+        }
+
+        .signup-link{
+            @apply text-amber-400 hover:underline;
+        }
+    }
+}

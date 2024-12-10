@@ -1,13 +1,17 @@
 .banner{
     @apply w-full bg-no-repeat bg-center bg-cover;
 
+    &.sm{
+      @apply h-[24rem];
+    }
+
     .banner-home{
       @apply h-screen;
       background-image: url('../../../assets/banner.jpg');
     }
 
     .banner-menu{
-      @apply h-[40vh];
+      @apply h-full;
 
       background-image: url('../../../assets/banner_2.jpeg');
     }
@@ -17,7 +21,7 @@
        @apply w-full h-full flex flex-col justify-center items-center bg-zinc-950 bg-opacity-80 ;
 
        .banner-header{
-            @apply  font-paint text-5xl md:text-7xl text-white;
+            @apply  font-paint text-4xl md:text-7xl text-white;
        }
 
        .banner-subHeader{

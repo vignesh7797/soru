@@ -1,4 +1,4 @@
-<div class="banner">
+<div class="banner" [class.sm]="type == 'small'">
 
     @switch (type) {
         @case ('small') {
@@ -29,7 +29,7 @@
             <p class="banner-subHeader">Booking a table is easy now</p>
             <div class="banner-btns">
                 <button class="btn-secondary" routerLink="/menu">Menu</button>
-                <button class="btn-primary">Reservation</button>
+                <button class="btn-primary" routerLink="/reservation">Reservation</button>
             </div>
         </div>
     </div>

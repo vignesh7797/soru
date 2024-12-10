@@ -1,0 +1,19 @@
+.pnf-container{
+    @apply w-screen h-[96vh];
+
+    .pnf-wrapper{
+        @apply flex flex-col justify-center items-center h-full; 
+    }
+
+    .pnf-header{
+        @apply text-[12rem] font-paint;
+    }
+
+    .pnf-subheader{
+        @apply text-4xl font-paint;
+    }
+
+    .pnf-content{
+        @apply my-8;
+    }
+}

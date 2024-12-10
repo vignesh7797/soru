@@ -1,38 +1,49 @@
 <div class="w-screen bg-amber-400 h-8 flex justify-between items-center px-3 z-50">
-  <div class="flex items-center w-[65%]">
-    <p class="flex items-center text-sm mr-5">
+  <div class="flex items-center w-full md:w-[70%]">
+
+    <p (click)="showside = true" class="md:hidden flex items-center text-sm mr-5 text-black cursor-pointer rotate-90">
+      <span class="material-icons-round">
+        bar_chart
+        </span>
+    </p>
+
+    <p class="sm:flex hidden items-center text-sm mr-5 text-black">
       <span class="material-icons-round text-2xl mr-2"> call </span>
       <span>+91 9042127018</span>
     </p>
 
-    <p class="sm:flex items-center text-sm hidden mr-5">
+    <p class="sm:flex items-center text-sm hidden mr-5 text-black">
       <span class="material-icons text-2xl mr-2"> room </span>
       <span> Lorem ipsum dolor sit amet. </span>
     </p>
 
-    <p class="lg:flex items-center text-sm hidden mr-5">
+    <p class="lg:flex items-center text-sm hidden mr-5 text-black">
       <span class="material-icons text-2xl mr-2"> email </span>
       <span>soru&commat;info.com</span>
     </p>
   </div>
-  <div class="flex">
-    <p class="flex items-center text-sm">
-      <span class="material-icons text-2xl mr-2"> person </span>
-      <span> Account </span>
-    </p>
-  </div>
+  @if (showMenu) {
+    <div class="flex">
+      <button pRipple class="flex items-center text-sm cursor-pointer text-black" (click)="account.toggle($event)">
+        <span class="material-icons text-2xl mr-2"> person </span>
+        <span> Account </span>
+        <span class="material-icons-sharp"> arrow_drop_down </span>
+      </button>
+    </div>
+  }
 </div>
 
-<div
-  class="w-screen flex justify-between items-center transition-all px-4 py-3 z-50"
-  [ngClass]="
+
+<div class="w-screen hidden md:flex justify-between items-center transition-all px-4 py-3 z-50" [ngClass]="
     isFixed ? 'fixed top-0 left-0 bg-zinc-700 drop-shadow-md' : 'absolute'
-  "
->
+  ">
+  @if (showMenu) {
   <button class="logo" [class.fixed_logo]="isFixed" routerLink=""></button>
+  
   <ul class="flex justify-center items-center w-1/2">
     <li class="">
-      <button class="menu-item" [class.fixed_active]="isFixed" [routerLink]="''" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <button class="menu-item" [class.fixed_active]="isFixed" [routerLink]="''" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
         Home
       </button>
     </li>
@@ -40,21 +51,140 @@
       <button class="menu-item" [class.fixed_active]="isFixed" routerLink="menu" routerLinkActive="active">Menu</button>
     </li>
     <li class="">
-      <button class="menu-item" [class.fixed_active]="isFixed" routerLink="aboutUs" routerLinkActive="active">About Us</button>
+      <button class="menu-item" [class.fixed_active]="isFixed" (click)="pages.toggle($event)">
+        Pages  <span class="material-icons-sharp"> arrow_drop_down </span>
+      </button>
     </li>
     <li class="">
-      <button class="menu-item" [class.fixed_active]="isFixed" routerLink="contact" routerLinkActive="active">Contact</button>
+      <button class="menu-item" [class.fixed_active]="isFixed" routerLink="aboutUs" routerLinkActive="active">About
+        Us</button>
+    </li>
+    <li class="">
+      <button class="menu-item" [class.fixed_active]="isFixed" routerLink="contact"
+        routerLinkActive="active">Contact</button>
     </li>
   </ul>
   <div class="flex">
-    <button class="quick_icons">
+    <button class="quick_icons" title="Reservation" routerLink="/reservation">
       <span class="material-symbols-outlined"> today </span>
     </button>
-    <button class="quick_icons">
-      <span class="material-symbols-outlined"> favorite </span>
+    <button class="quick_icons" title="Favorites" (click)="fav.toggle($event)" >
+      <span class="material-symbols-outlined" pBadge value="{{common.favorities().length}}" [badgeDisabled]="common.favorities().length == 0" severity="warning"> favorite </span>
     </button>
-    <button class="quick_icons">
-      <span class="material-symbols-rounded"> shopping_cart </span>
+    <button class="quick_icons" title="Cart" routerLink="/cart">
+      <span class="material-symbols-rounded" pBadge value="{{common.cartList().length}}" [badgeDisabled]="common.cartList().length == 0" severity="warning"> shopping_cart </span>
     </button>
   </div>
+  }
 </div>
+
+
+
+
+<p-menu #account [model]="accMenu" [popup]="true">
+  <ng-template pTemplate="start">
+    <div class="flex items-center px-5 py-3 gap-3">
+      <div class="bg-stone-800 rounded p-1 aspect-square">
+        <span class="material-icons-sharp text-5xl">
+          person
+        </span>
+      </div>
+      <div class="w-3/5">
+        <p class="font-bold text-ellipsis text-nowrap overflow-hidden">Jhon Vicky</p>
+        <p class="italic text-xs text-ellipsis text-nowrap overflow-hidden">&commat;jhon_vicky</p>
+      </div>
+    </div>
+    <hr class="m-2">
+  </ng-template>
+
+  <ng-template pTemplate="item" let-item>
+    <a pRipple class="menu-overlay-item" [routerLink]="item.routerLink">
+      <span class="material-icons-round">
+        {{item.icon}}
+      </span>
+      <span class="ml-4">{{item.label}}</span>
+    </a>
+  </ng-template>
+
+  <ng-template pTemplate="end">
+    <hr class="m-2">
+    <button (click)="account?.toggle($event)" routerLink="/login" pRipple class="menu-overlay-item">
+      <span class="material-icons-round">
+        logout
+      </span>
+      <span class="ml-4">Logout</span>
+    </button>
+  </ng-template>
+</p-menu>
+
+<p-tieredMenu #pages [popup]="true" [model]="pageMenu"></p-tieredMenu>
+
+
+<p-overlayPanel #fav>
+  @if(common.favorities().length > 0){
+    <div class="w-[20rem] max-h-[25rem] overflow-auto">
+      @for(fav of common.favorities(); track $index){
+        <button class="w-full flex items-center justify-between my-3 hover:bg-amber-400 hover:bg-opacity-15 cursor-pointer p-2 rounded">
+          <img [src]="fav.imgSrc" [alt]="fav.title" class="w-14 rounded">
+          <div>
+            <p class="text-left font-semibold w-40 text-nowrap overflow-hidden text-ellipsis">{{fav.title | titlecase}}</p>
+            <p class="text-left text-sm text-zinc-500">{{fav.type | titlecase}}</p>
+          </div>
+          <p class="font-bold">{{fav.price}}</p>
+        </button>
+      }
+    </div>
+  
+    <hr class="my-2" />
+  
+    <button class="w-full h-10 rounded text-amber-400 hover:bg-amber-400 hover:bg-opacity-5" routerLink="/account/favorite" (click)="fav.toggle($event)">View All</button>
+  }@else {
+    <div class="w-[20rem] max-h-[20rem] overflow-auto">
+      <p class="text-center">
+        No Data Found.
+      </p>
+    </div>
+  }
+</p-overlayPanel>
+
+
+
+<p-sidebar [(visible)]="showside">
+  <ng-template pTemplate="header">
+    <button class="logo" [class.fixed_logo]="isFixed" routerLink=""></button>
+  </ng-template>
+  <ng-template pTemplate="content">
+    <div class="side-menu">
+      <ul class="side-menu-list">
+        <li class="side-menu-item">
+          <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="showside=false" title="Home">Home</a>
+        </li>
+        <li class="side-menu-item">
+          <a routerLink="/menu" routerLinkActive="active" (click)="showside=false" title="Menu">Menu</a>
+        </li>
+        <li class="side-menu-item">
+          <a routerLink="/contact" routerLinkActive="active" (click)="showside=false" title="Contact">Contact</a>
+        </li>
+        <li class="side-menu-item">
+          <a routerLink="/aboutUs" routerLinkActive="active" (click)="showside=false" title="About Us">About Us</a>
+        </li>
+        <li class="side-menu-item">
+          <a routerLink="/reservation" routerLinkActive="active" (click)="showside=false" title="Reservation">Reservation</a>
+        </li>
+        <li class="side-menu-item">
+          <a routerLink="/wishlist" routerLinkActive="active" (click)="showside=false" title="Wish List">Wish List</a>
+        </li>
+        <li class="side-menu-item">
+          <a routerLink="/cart" routerLinkActive="active" (click)="showside=false" title="Cart">Cart</a>
+        </li>
+      </ul>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+    <button routerLink="/login" (click)="showside = false" title="Sign out" class="w-full flex justify-between px-6 items-center text-[#989898]">
+      <span class="text-xl">Sign Out</span>
+      <span class="material-icons-round text-3xl">logout</span>
+    </button>
+  </ng-template>
+</p-sidebar>

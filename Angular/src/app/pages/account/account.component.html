@@ -1,0 +1,64 @@
+<div class="account-container">
+    <div class="account-taskbar">
+        <button class="flex" (click)="sidebarVisible = true;">
+            <span class="material-icons-round">
+                grid_view
+            </span>
+        </button>
+    </div>
+    <div class="account-sidebar">
+        <ng-container *ngTemplateOutlet="sidebar"></ng-container>
+    </div>
+    <div class="account-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+<ng-template #sidebar>
+    <p-menu [model]="menuItems" styleClass="bg-zinc-800 w-full">
+        <ng-template pTemplate="start">
+            <div class="hidden md:flex items-center gap-4 pb-4 border-b-[1px] border-zinc-600">
+                <div class="bg-zinc-700 h-12 w-12 rounded flex items-center justify-center">
+                    <span class="material-icons-round text-3xl">
+                        person
+                    </span>
+                </div>
+                <p class="text-2xl font-bold text-nowrap w-40 overflow-hidden text-ellipsis" title="John Vicky">John Vickyyyyyyyy</p>
+            </div> 
+        </ng-template>
+        <ng-template pTemplate="item" let-item>
+            <a [routerLink]="item.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" pRipple class="sidebar-link" [title]="item.label" (click)="sidebarVisible = false">
+                <span class="material-icons-round ">
+                    {{item.icon}}
+                </span>
+                {{item.label}}
+            </a>
+        </ng-template>
+        <ng-template pTemplate="end">
+            <div class="py-4 grow border-t-[1px] border-zinc-600 w-full">
+                <button title="Log out" routerLink="/login" class="w-full flex items-center gap-4 px-3 py-2 rounded hover:bg-zinc-700 hover:bg-opacity-50 text-zinc-400">
+                    <span class="material-icons-round">
+                        logout
+                    </span>
+                    Log Out
+                </button>
+            </div>
+        </ng-template>
+    </p-menu>
+</ng-template>
+
+
+<p-sidebar [(visible)]="sidebarVisible" styleClass="account-sidebar">
+    <ng-template pTemplate="header">
+        <div class="flex items-center gap-4">
+            <div class="bg-zinc-700 h-12 w-12 rounded flex items-center justify-center">
+                <span class="material-icons-round text-3xl">
+                    person
+                </span>
+            </div>
+            <p class="text-xl font-bold text-nowrap w-40 overflow-hidden text-ellipsis" title="John Vicky">John Vickyyyyyyyy</p>
+        </div> 
+    </ng-template>
+    <ng-container *ngTemplateOutlet="sidebar"></ng-container>
+</p-sidebar>

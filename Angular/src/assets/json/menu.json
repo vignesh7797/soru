@@ -20,8 +20,9 @@
        "drinks",
        "starters"
      ],
-     "imgSrc": "https://picsum.photos/id/3/720/720"
-   },
+     "imgSrc": "https://picsum.photos/id/3/720/720",
+     "stock" : "INSTOCK"
+    },
    {
      "_id": "66f5115308ed3e926aeea7ae",
      "guid": "d4c975a6-9c5a-4aa4-b24f-c52044979630",
@@ -43,7 +44,8 @@
        "seafoods",
        "mutton"
      ],
-     "imgSrc": "https://picsum.photos/id/80/720/720"
+     "imgSrc": "https://picsum.photos/id/80/720/720",
+     "stock" : "LOWSTOCK"
    },
    {
      "_id": "66f51153ce9bf0d83d5f8991",
@@ -66,7 +68,8 @@
        "desserts",
        "meals"
      ],
-     "imgSrc": "https://picsum.photos/id/76/720/720"
+     "imgSrc": "https://picsum.photos/id/76/720/720",
+     "stock" : "OUTOFSTOCK"
    },
    {
      "_id": "66f511532d4fbe0964259ef0",
@@ -89,7 +92,8 @@
        "soups",
        "seafoods"
      ],
-     "imgSrc": "https://picsum.photos/id/18/720/720"
+     "imgSrc": "https://picsum.photos/id/18/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153f39f46841ffa452a",
@@ -112,7 +116,8 @@
        "drinks",
        "desserts"
      ],
-     "imgSrc": "https://picsum.photos/id/57/720/720"
+     "imgSrc": "https://picsum.photos/id/57/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153c26ec26fbb48bdd0",
@@ -135,7 +140,8 @@
        "seafoods",
        "meals"
      ],
-     "imgSrc": "https://picsum.photos/id/25/720/720"
+     "imgSrc": "https://picsum.photos/id/25/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511538c3033e1d4fa527b",
@@ -158,7 +164,8 @@
        "chicken",
        "seafoods"
      ],
-     "imgSrc": "https://picsum.photos/id/85/720/720"
+     "imgSrc": "https://picsum.photos/id/85/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115313bbc915cad3af9f",
@@ -181,7 +188,8 @@
        "drinks",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/71/720/720"
+     "imgSrc": "https://picsum.photos/id/71/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153a9912315ca124d8c",
@@ -204,7 +212,8 @@
        "chicken",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/66/720/720"
+     "imgSrc": "https://picsum.photos/id/66/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153f8ec9c4f0413523c",
@@ -227,7 +236,8 @@
        "soups",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/62/720/720"
+     "imgSrc": "https://picsum.photos/id/62/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115372ecfa41a32a326b",
@@ -250,7 +260,8 @@
        "chicken",
        "mutton"
      ],
-     "imgSrc": "https://picsum.photos/id/12/720/720"
+     "imgSrc": "https://picsum.photos/id/12/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153884290b6c465d3e7",
@@ -273,7 +284,8 @@
        "seafoods",
        "starters"
      ],
-     "imgSrc": "https://picsum.photos/id/18/720/720"
+     "imgSrc": "https://picsum.photos/id/18/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153368105031d37955a",
@@ -296,7 +308,8 @@
        "meals",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/43/720/720"
+     "imgSrc": "https://picsum.photos/id/43/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511533db7ce154a0026dc",
@@ -319,7 +332,8 @@
        "mutton",
        "soups"
      ],
-     "imgSrc": "https://picsum.photos/id/15/720/720"
+     "imgSrc": "https://picsum.photos/id/15/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511530a16e6f9dee08686",
@@ -342,7 +356,8 @@
        "chicken",
        "mutton"
      ],
-     "imgSrc": "https://picsum.photos/id/6/720/720"
+     "imgSrc": "https://picsum.photos/id/6/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153e08b6a94db07b626",
@@ -365,7 +380,8 @@
        "desserts",
        "meals"
      ],
-     "imgSrc": "https://picsum.photos/id/92/720/720"
+     "imgSrc": "https://picsum.photos/id/92/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115374e329cb3eec4dfa",
@@ -388,7 +404,8 @@
        "desserts",
        "meals"
      ],
-     "imgSrc": "https://picsum.photos/id/82/720/720"
+     "imgSrc": "https://picsum.photos/id/82/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115327a0cb5f4340535c",
@@ -411,7 +428,8 @@
        "desserts",
        "seafoods"
      ],
-     "imgSrc": "https://picsum.photos/id/69/720/720"
+     "imgSrc": "https://picsum.photos/id/69/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153dd7f69cd2db50613",
@@ -434,7 +452,8 @@
        "soups",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/40/720/720"
+     "imgSrc": "https://picsum.photos/id/40/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115312b29d5e38c13b82",
@@ -457,7 +476,8 @@
        "soups",
        "seafoods"
      ],
-     "imgSrc": "https://picsum.photos/id/42/720/720"
+     "imgSrc": "https://picsum.photos/id/42/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511537458a7d1c36da0ba",
@@ -480,7 +500,8 @@
        "meals",
        "mutton"
      ],
-     "imgSrc": "https://picsum.photos/id/30/720/720"
+     "imgSrc": "https://picsum.photos/id/30/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153229df01d389107ac",
@@ -503,7 +524,8 @@
        "soups",
        "mutton"
      ],
-     "imgSrc": "https://picsum.photos/id/24/720/720"
+     "imgSrc": "https://picsum.photos/id/24/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115353f9b9158c653e83",
@@ -526,7 +548,8 @@
        "chicken",
        "soups"
      ],
-     "imgSrc": "https://picsum.photos/id/39/720/720"
+     "imgSrc": "https://picsum.photos/id/39/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511534da0fb8eac859b4a",
@@ -549,7 +572,8 @@
        "seafoods",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/45/720/720"
+     "imgSrc": "https://picsum.photos/id/45/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115339218850e96ca849",
@@ -572,7 +596,8 @@
        "meals",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/6/720/720"
+     "imgSrc": "https://picsum.photos/id/6/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511533f26c30079e1b1ec",
@@ -595,7 +620,8 @@
        "chicken",
        "starters"
      ],
-     "imgSrc": "https://picsum.photos/id/95/720/720"
+     "imgSrc": "https://picsum.photos/id/95/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115356760df6fd98671e",
@@ -618,7 +644,8 @@
        "meals",
        "meals"
      ],
-     "imgSrc": "https://picsum.photos/id/14/720/720"
+     "imgSrc": "https://picsum.photos/id/14/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153ae21091801dec975",
@@ -641,7 +668,8 @@
        "drinks",
        "desserts"
      ],
-     "imgSrc": "https://picsum.photos/id/89/720/720"
+     "imgSrc": "https://picsum.photos/id/89/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153ff57ec69705d83ed",
@@ -664,7 +692,8 @@
        "mutton",
        "meals"
      ],
-     "imgSrc": "https://picsum.photos/id/88/720/720"
+     "imgSrc": "https://picsum.photos/id/88/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153d0bed9d35eda58ae",
@@ -687,7 +716,8 @@
        "drinks",
        "drinks"
      ],
-     "imgSrc": "https://picsum.photos/id/2/720/720"
+     "imgSrc": "https://picsum.photos/id/2/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153c646d72681ecb3ac",
@@ -710,7 +740,8 @@
        "desserts",
        "desserts"
      ],
-     "imgSrc": "https://picsum.photos/id/64/720/720"
+     "imgSrc": "https://picsum.photos/id/64/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153e2acb07aca089a85",
@@ -733,7 +764,8 @@
        "drinks",
        "drinks"
      ],
-     "imgSrc": "https://picsum.photos/id/98/720/720"
+     "imgSrc": "https://picsum.photos/id/98/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115360755f7de5c2c707",
@@ -756,7 +788,8 @@
        "drinks",
        "mutton"
      ],
-     "imgSrc": "https://picsum.photos/id/79/720/720"
+     "imgSrc": "https://picsum.photos/id/79/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115315fc4b6748644d12",
@@ -779,7 +812,8 @@
        "drinks",
        "seafoods"
      ],
-     "imgSrc": "https://picsum.photos/id/49/720/720"
+     "imgSrc": "https://picsum.photos/id/49/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153dcce744b001d34d1",
@@ -802,7 +836,8 @@
        "chicken",
        "seafoods"
      ],
-     "imgSrc": "https://picsum.photos/id/85/720/720"
+     "imgSrc": "https://picsum.photos/id/85/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153bb1a3070420482a6",
@@ -825,7 +860,8 @@
        "starters",
        "seafoods"
      ],
-     "imgSrc": "https://picsum.photos/id/74/720/720"
+     "imgSrc": "https://picsum.photos/id/74/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153cd0658e50304f8ec",
@@ -848,7 +884,8 @@
        "starters",
        "drinks"
      ],
-     "imgSrc": "https://picsum.photos/id/77/720/720"
+     "imgSrc": "https://picsum.photos/id/77/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153c8160390137749e0",
@@ -871,7 +908,8 @@
        "starters",
        "meals"
      ],
-     "imgSrc": "https://picsum.photos/id/15/720/720"
+     "imgSrc": "https://picsum.photos/id/15/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511539f307405b7cc6e95",
@@ -894,7 +932,8 @@
        "chicken",
        "drinks"
      ],
-     "imgSrc": "https://picsum.photos/id/54/720/720"
+     "imgSrc": "https://picsum.photos/id/54/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153bac44c5a1cf4e50f",
@@ -917,7 +956,8 @@
        "seafoods",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/41/720/720"
+     "imgSrc": "https://picsum.photos/id/41/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153e3026c4f110686ba",
@@ -940,7 +980,8 @@
        "mutton",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/94/720/720"
+     "imgSrc": "https://picsum.photos/id/94/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115338ed6e037ab6e889",
@@ -963,7 +1004,8 @@
        "desserts",
        "desserts"
      ],
-     "imgSrc": "https://picsum.photos/id/36/720/720"
+     "imgSrc": "https://picsum.photos/id/36/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153fb3aced1bdbe6104",
@@ -986,7 +1028,8 @@
        "starters",
        "meals"
      ],
-     "imgSrc": "https://picsum.photos/id/88/720/720"
+     "imgSrc": "https://picsum.photos/id/88/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511531f5bd33319448169",
@@ -1009,7 +1052,8 @@
        "drinks",
        "desserts"
      ],
-     "imgSrc": "https://picsum.photos/id/49/720/720"
+     "imgSrc": "https://picsum.photos/id/49/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511530f32345fea386245",
@@ -1032,7 +1076,8 @@
        "starters",
        "chicken"
      ],
-     "imgSrc": "https://picsum.photos/id/97/720/720"
+     "imgSrc": "https://picsum.photos/id/97/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511530233a4a2b3a45580",
@@ -1055,7 +1100,8 @@
        "desserts",
        "desserts"
      ],
-     "imgSrc": "https://picsum.photos/id/88/720/720"
+     "imgSrc": "https://picsum.photos/id/88/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511539cab4246dc251dfe",
@@ -1078,7 +1124,8 @@
        "desserts",
        "drinks"
      ],
-     "imgSrc": "https://picsum.photos/id/28/720/720"
+     "imgSrc": "https://picsum.photos/id/28/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f511531be411f96816ff1f",
@@ -1101,7 +1148,8 @@
        "meals",
        "starters"
      ],
-     "imgSrc": "https://picsum.photos/id/57/720/720"
+     "imgSrc": "https://picsum.photos/id/57/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f5115344a92182fd21698d",
@@ -1124,7 +1172,8 @@
        "mutton",
        "soups"
      ],
-     "imgSrc": "https://picsum.photos/id/85/720/720"
+     "imgSrc": "https://picsum.photos/id/85/720/720",
+     "stock" : "INSTOCK"
    },
    {
      "_id": "66f51153fd07a53d7aa067ba",
@@ -1147,6 +1196,7 @@
        "starters",
        "seafoods"
      ],
-     "imgSrc": "https://picsum.photos/id/64/720/720"
+     "imgSrc": "https://picsum.photos/id/64/720/720",
+     "stock" : "INSTOCK"
    }
  ]

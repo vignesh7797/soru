@@ -5,18 +5,18 @@
     }
 
     .sub-header{
-        @apply text-center text-wrap text-zinc-300 mt-8 font-light;
+        @apply text-sm md:text-base text-center text-wrap text-zinc-300 mt-8 font-light;
     }
 
     .content-box{
-        @apply flex w-full min-h-[34rem] mt-8 bg-black bg-opacity-50;
+        @apply flex flex-col md:flex-row w-full min-h-[34rem] mt-8 bg-black bg-opacity-50;
 
         .about-banner{
             @apply w-1/2 bg-[url('../../../assets/bg_2.jpg')] bg-cover bg-center;
         }
 
         .about-content{
-            @apply w-1/2 p-8 grid;
+            @apply w-full md:w-1/2 p-8 grid;
 
             .about-title{
                 @apply text-amber-400 font-bold text-lg;

@@ -1,9 +1,9 @@
 .home-feed-container{
-    @apply w-full bg-[url('../../../assets/bg_1.jpg')] bg-cover bg-no-repeat p-6;
+    @apply w-full bg-[url('../../../assets/bg_1.jpg')] bg-cover bg-no-repeat p-2 md:p-6;
 }
 
 .home-timetable{
-    @apply w-full h-60 flex justify-between items-center bg-[url('../../../assets/bg_3.png')] bg-cover p-2;
+    @apply w-full md:h-60 grid grid-cols-2 md:grid-cols-4 justify-between items-center bg-[url('../../../assets/bg_3.png')] bg-cover p-2;
     
     .time-item{
         @apply py-2 px-4;

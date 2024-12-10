@@ -1,0 +1,11 @@
+.reserv-wrapper{
+    @apply max-w-[1240px] relative -top-5 mx-auto w-full md:w-11/12 shadow-lg bg-[#353535] p-4 border-t-[5px] border-amber-400 rounded-t-md;
+
+    .reserv-title{
+        @apply text-xl text-center;
+    }
+
+    .reserv-form{
+        @apply grid grid-cols-1 lg:grid-cols-2 px-12 gap-x-16 gap-y-8 md:w-fit mx-auto my-0;
+    }
+}

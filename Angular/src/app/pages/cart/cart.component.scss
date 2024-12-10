@@ -1,0 +1,20 @@
+.cart-wrapper{
+    @apply  relative -top-5 bg-zinc-700 shadow-lg rounded-lg max-w-[1240px] md:w-11/12 mx-auto my-4 border-t-[5px] border-amber-400 rounded-t-md p-4;
+
+    .btn-secondary{
+        @apply bg-zinc-800;
+    }
+
+    p-inputnumber{
+        @apply w-full md:w-[160px] max-w-[400px];
+
+        .p-inputnumber-buttons-horizontal{
+            @apply w-40;
+        
+            .p-inputtext.p-inputnumber-input {
+                @apply w-4 md:w-4;
+            }
+        }    
+    }
+    
+}

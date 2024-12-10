@@ -1,0 +1,128 @@
+<div class="profile-container">
+    <h1 class="title" title="Account Details">Account Details</h1>
+    <div class="profile-wrapper">
+        <div class="prfile-pic">
+            <ng-container *ngTemplateOutlet="upload"></ng-container>
+        </div>
+        <div class="prfile-form">
+            <form  [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="flex flex-col gap-6">
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="name" formControlName="name" />
+                        <label for="name">Name*</label>
+                    </p-floatLabel>
+                    @if ((profileForm.get('name')?.touched ||
+                    profileForm.get('name')?.dirty) && profileForm.get('name')?.errors) {
+                    <p class="error-text">Name is required*</p>
+                    }
+                </div>
+    
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="email" formControlName="email" />
+                        <label for="email">Email*</label>
+                    </p-floatLabel>
+                    @if ((profileForm.get('email')?.touched  ||
+                    profileForm.get('email')?.dirty) && profileForm.get('email')?.errors) {
+                    <p class="error-text">Email is required*</p>
+                    }
+                </div>
+    
+                <div class="w-full">
+                    <p-floatLabel>
+                        <p-inputNumber formControlName="phone" mode="decimal" [useGrouping]="false" />
+                        <label for="number-input">Phone*</label>
+                    </p-floatLabel>
+                    @if ((profileForm.get('phone')?.touched ||
+                    profileForm.get('phone')?.dirty) && profileForm.get('phone')?.errors) {
+                    <p class="error-text">Phone is required*</p>
+                    }
+                </div>
+    
+                <div class="w-full">
+                    <p-floatLabel>
+                        <textarea formControlName="address" id="float-input" rows="7" pInputTextarea>
+                        </textarea>
+                        <label for="float-input">Address*</label>
+                    </p-floatLabel>
+    
+                    @if ((profileForm.get('address')?.touched  || 
+                    profileForm.get('address')?.dirty)  && profileForm.get('address')?.errors) {
+                    <p class="error-text">Address is required*</p>
+                    }
+                </div>
+    
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="org" formControlName="org" />
+                        <label for="org">Organization</label>
+                    </p-floatLabel>
+                </div>
+    
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="org" formControlName="website" />
+                        <label for="org">Website</label>
+                    </p-floatLabel>
+                </div>
+    
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="org" formControlName="facebook" />
+                        <label for="org">Facebook</label>
+                    </p-floatLabel>
+                </div>
+    
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="org" formControlName="instagram" />
+                        <label for="org">Instagram</label>
+                    </p-floatLabel>
+                </div>
+                
+                <button type="submit" class="btn-primary w-fit mx-0">Update Profile</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<ng-template #upload>
+    <p-fileUpload name="myfile[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" (onUpload)="onTemplatedUpload()" (onSelect)="onSelectedFiles($event)">
+        <ng-template pTemplate="header" let-files let-chooseCallback="chooseCallback" let-clearCallback="clearCallback" let-uploadCallback="uploadCallback">
+        </ng-template>
+
+        <ng-template pTemplate="content" let-chooseCallback="chooseCallback" let-files let-uploadedFiles="uploadedFiles" let-removeFileCallback="removeFileCallback" let-removeUploadedFileCallback="removeUploadedFileCallback">
+           @if(files?.length == 0){
+            <p-button styleClass="fileupload-btn" (onClick)="choose($event, chooseCallback)" [rounded]="true" [outlined]="true"j>
+                <span class="material-symbols-outlined">
+                    cloud_upload
+                </span>
+            </p-button>
+            <p class="mt-6 mb-0 text-amber-400 text-opacity-50 text-center">Drag and drop files here to upload.</p>
+           }
+
+             <div *ngIf="files?.length > 0" class="w-full">
+                <img role="presentation" [alt]="files[0].name" [src]="files[0].objectURL" class="w-full aspect-square rounded-full overflow-hidden" />
+                <div class="flex mt-6">
+                    <button  class="w-full btn-primary" (click)="choose($event, chooseCallback)">
+                        Change
+                    </button>
+                    <button class="w-full btn-danger" (click)="onRemoveTemplatingFile($event, files[0], removeFileCallback, 0)" >
+                        Remove
+                    </button>
+                </div>
+            </div> 
+        </ng-template>
+
+        <ng-template pTemplate="file" let-files>
+        </ng-template>
+
+        <ng-template pTemplate="empty" let-chooseCallback="chooseCallback">
+        </ng-template>
+    </p-fileUpload>
+</ng-template>
+
+
+<p-toast />

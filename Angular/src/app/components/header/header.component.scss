@@ -1,6 +1,6 @@
 
 .logo{
-    @apply bg-no-repeat bg-center bg-contain w-36 h-16 transition-all duration-150;
+    @apply bg-no-repeat bg-center bg-contain w-24 md:w-36 h-8 md:h-16 transition-all duration-150;
 
     background-image: url('../../../assets/logo_big.png');
 
@@ -10,7 +10,7 @@
 }
 
 .menu-item{
-    @apply border-0 px-4 py-1.5  text-white rounded hover:bg-zinc-600 hover:bg-opacity-50 font-light;
+    @apply border-0 px-4 py-1.5  text-white rounded hover:bg-zinc-600 hover:bg-opacity-50 font-light flex items-center;
 
     &.active{
         @apply bg-amber-300 bg-opacity-40 hover:bg-amber-400 hover:text-black hover:bg-opacity-100;

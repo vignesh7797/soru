@@ -46,7 +46,7 @@
     }
 
     .rating{
-        @apply text-amber-400 mt-2 text-sm;
+        @apply text-amber-400 mt-2 text-sm hidden md:block;
     
         span{
             @apply text-lg;
@@ -61,6 +61,6 @@
     }
 
     .recipe-detail{
-        @apply text-xs font-light my-2 ;
+        @apply hidden md:block text-xs font-light my-2 ;
       }
 }

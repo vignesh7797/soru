@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Billing Address",
+        "country" : "United States",
+        "city" : "New York",
+        "place" : "Brooklyn",
+        "postal": 12345,
+        "firstname" : "Jhon",
+        "lastname" : "vicky",
+        "email" : "jhonvicky@gmail.com",
+        "phone" : 9876543210,
+        "address" : "15B, Park Avenue"
+    },
+    {
+        "name": "Shipping Address",
+        "country" : "United States",
+        "city" : "New York",
+        "place" : "Brooklyn",
+        "postal": 12345,
+        "firstname" : "Vignesh",
+        "lastname" : "Waran",
+        "email" : "jvigneshwaran@gmail.com",
+        "phone" : 9876543210,
+        "address" : "15B, Express Avenue"
+    }
+]

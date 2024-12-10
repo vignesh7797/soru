@@ -1,0 +1,19 @@
+.address-container{
+    .title{
+        @apply text-2xl font-semibold mb-6;
+    }
+
+
+    .address-table{
+
+        @apply md:grid grid-cols-2 lg:grid-cols-3 gap-8;
+        
+        tr{
+            @apply md:grid justify-start justify-items-start h-12;
+
+            th{
+                @apply text-left pr-3 md:pr-8;
+            }
+        }
+    }
+}

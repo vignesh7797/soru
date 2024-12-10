@@ -45,6 +45,7 @@ export class MenuComponent {
   menuItems: Menu[] = [];
 
   layout:any = 'list';
+  search: string = '';
 
   constructor(private apiService:ApiService){
     this.apiService.getMenuItems().subscribe((res:any) =>{

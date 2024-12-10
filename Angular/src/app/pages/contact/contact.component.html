@@ -42,7 +42,7 @@
                     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                         <div class="w-full">
                             <p-floatLabel>
-                                <input class="contact-input" pInputText id="name" formControlName="name" />
+                                <input class="soru-input" pInputText id="name" formControlName="name" />
                                 <label for="name">Name*</label>
                             </p-floatLabel>
                             @if ((contactForm.get('name')?.touched ||
@@ -54,7 +54,7 @@
 
                         <div class="w-full">
                             <p-floatLabel>
-                                <input class="contact-input" pInputText id="email" formControlName="email" />
+                                <input class="soru-input" pInputText id="email" formControlName="email" />
                                 <label for="email">Email*</label>
                             </p-floatLabel>
                             @if ((contactForm.get('email')?.touched  ||

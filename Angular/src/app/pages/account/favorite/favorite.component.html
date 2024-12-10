@@ -1,0 +1,87 @@
+<p>favorite works!</p>
+
+<div>
+    <p-dataView #dv [value]="common.favorities()" [layout]="layout" [rows]="5" [paginator]="common.favorities().length > 0">
+        <ng-template pTemplate="header">
+            <div class="flex justify-content-end">
+                <p-dataViewLayoutOptions [layout]="layout" />
+            </div>
+        </ng-template>
+        <ng-template pTemplate="list" let-products>
+            <div class="grid">
+                @for(item of products; track $index){
+                    <div class="flex flex-col sm:flex-row sm:items-center p-4 gap-3" [ngClass]="{ 'border-t-[1px] border-zinc-700': $index != 0  }">
+                        <div class="md:w-[10rem] relative">
+                            <img class="block xl:block mx-auto rounded w-full" [src]="item.imgSrc" [alt]="item.title" />
+                            <p-tag [value]="item.type" [severity]="getSeverity(item)" class="absolute" [style.left.px]="4" [style.top.px]="4" />
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between md:items-center flex-1 gap-4">
+                            <div class="flex flex-row md:flex-col justify-between items-start gap-2">
+                                <div>
+                                    <div class="text-lg font-black mt-2">{{ item.title | titlecase}}</div>
+                                </div>
+                                <div class="bg-zinc-800 p-1" style="border-radius: 30px">
+                                    <div class="bg-zinc-900 flex items-center gap-2 justify-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06)">
+                                        <span class="font-black text-sm">{{ item.ratings }}</span>
+                                        <span class="material-icons-outlined text-amber-500">
+                                            star
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:items-end gap-5">
+                                <span class="text-xl font-semibold text-900">{{  item.price }}</span>
+                                <div class="flex flex-row-reverse md:flex-row gap-2">
+                                    <button class="btn-primary m-0">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </ng-template>
+        <ng-template let-product pTemplate="grid" let-products>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 p-2">
+                @for(product of products; track $index){
+                    <div class="p-4 border-[1px] border-zinc-700 zinc-border zinc-card rounded flex flex-col h-[30rem]">
+                        <div class="zinc-50 flex justify-center border-round p-3">
+                            <div class="relative mx-auto">
+                                <img class="rounded w-full" [src]="product.imgSrc" [alt]="product.title" style="max-width: 300px;" />
+                                <p-tag [value]="product.type" [severity]="getSeverity(product)" class="absolute" [style.left.px]="4" [style.top.px]="4" />
+                            </div>
+                        </div>
+                        <div class="pt-4 h-full flex flex-col justify-between">
+                            <div class="flex flex-row justify-between items-start gap-2">
+                                <div>
+                                    <div class="text-lg font-black mt-1">{{ product.title }}</div>
+                                </div>
+                                <div class="zinc-100 p-1" style="border-radius: 30px">
+                                    <div class="zinc-0 flex items-center gap-2 justify-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06)">
+                                        <span class="text-900 font-medium text-sm">{{ product.ratings }}</span>
+                                        <span class="material-icons-outlined text-amber-500">
+                                            star
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4 mt-4">
+                                <span class="text-2xl font-semibold">{{ product.price }}</span>
+                                <div class="flex gap-2">
+                                    <div class="flex flex-row-reverse md:flex-row gap-2">
+                                        <button class="btn-primary m-0">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="empty">
+            <div class="w-full p-6">
+                <p class="text-2xl text-center">No Records Found.</p>
+            </div>
+        </ng-template>
+    </p-dataView>
+</div>

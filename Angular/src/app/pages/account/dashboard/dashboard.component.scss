@@ -1,0 +1,46 @@
+.dashboard{
+
+    .title{
+        @apply text-lg;
+
+        span{
+            @apply font-bold;
+        }
+    }
+
+    .desc{
+        @apply text-sm mt-6 text-zinc-200;
+    }
+
+    .summary{
+        @apply rounded-lg border-[1px] border-zinc-600 p-4 mt-10 flex flex-wrap gap-5 justify-between;
+
+        .summary-card{
+            @apply shadow rounded-lg p-8 w-full md:w-[22rem] bg-zinc-900 bg-opacity-40;
+
+            .header{
+                @apply flex justify-between items-center;
+
+                p{
+                    @apply text-2xl font-bold;
+                }
+
+                a{
+                    @apply hover:bg-zinc-700 active:bg-zinc-600 rounded-full w-10 h-10 flex justify-center items-center;
+                }
+            }
+
+            .summary-list{
+                @apply p-2;
+
+                li{
+                    @apply text-zinc-300 mb-4;
+
+                    .link{
+                        @apply text-amber-400 hover:underline;
+                    }
+                }
+            }
+        }
+    }
+}

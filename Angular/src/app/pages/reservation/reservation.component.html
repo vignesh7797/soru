@@ -1,0 +1,103 @@
+<div class="reservation-container">
+    <app-banner type="small" title="Reservation"></app-banner>
+
+    <div class="reserv-wrapper">
+        <h4 class="reserv-title">
+            Book tables online
+        </h4>
+
+        <hr>
+
+        <form [formGroup]="reserveForm" (ngSubmit)="onSubmit()">
+            <div class="reserv-form">
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="name" formControlName="name" />
+                        <label for="name">Name*</label>
+                    </p-floatLabel>
+                    @if ((reserveForm.get('name')?.touched ||
+                    reserveForm.get('name')?.dirty) && reserveForm.get('name')?.errors) {
+                    <p class="error-text">Name is required*</p>
+                    }
+                </div>
+
+                <div class="w-full">
+                    <p-floatLabel>
+                        <input class="soru-input" pInputText id="email" formControlName="email" />
+                        <label for="email">Email*</label>
+                    </p-floatLabel>
+                    @if ((reserveForm.get('email')?.touched  ||
+                    reserveForm.get('email')?.dirty) && reserveForm.get('email')?.errors) {
+                    <p class="error-text">Email is required*</p>
+                    }
+                </div>
+
+                <div class="w-full">
+                    <p-floatLabel>
+                        <p-inputNumber formControlName="phone" mode="decimal" [useGrouping]="false" />
+                        <label for="number-input">Phone*</label>
+                    </p-floatLabel>
+                    @if ((reserveForm.get('phone')?.touched ||
+                    reserveForm.get('phone')?.dirty) && reserveForm.get('phone')?.errors) {
+                    <p class="error-text">Phone is required*</p>
+                    }
+                </div>
+
+                <div class="w-full">
+                    <p-floatLabel>
+                        <p-calendar formControlName="date" id="float-input" dateFormat="dd/mm/yy" [minDate]="today"/>
+                        <label for="float-input">Date*</label>
+                    </p-floatLabel>
+
+                    @if ((reserveForm.get('date')?.touched  || 
+                    reserveForm.get('date')?.dirty)  && reserveForm.get('date')?.errors) {
+                    <p class="error-text">Date is required*</p>
+                    }
+                </div>
+
+                <div class="w-full">
+                    <p-floatLabel>
+                        <p-calendar formControlName="time" id="float-input" inputId="calendar-timeonly" [timeOnly]="true" hourFormat="12"   />
+                        <label for="float-input">Time*</label>
+                    </p-floatLabel>
+
+
+                    @if ((reserveForm.get('time')?.touched  || 
+                    reserveForm.get('time')?.dirty)  && reserveForm.get('time')?.errors) {
+                    <p class="error-text">Time is required*</p>
+                    }
+                </div>
+
+                <div class="w-full">
+                    <p-floatLabel>
+                        <p-inputNumber formControlName="count" mode="decimal" [useGrouping]="false" [min]="1"   />
+                        <label for="number-input">Guest*</label>
+                    </p-floatLabel>
+                    @if ((reserveForm.get('count')?.touched ||
+                    reserveForm.get('count')?.dirty) && reserveForm.get('count')?.errors) {
+                    <p class="error-text">Guest is required*</p>
+                    }
+                </div>
+
+                <div class="w-full colspan-2">
+                    <p-floatLabel>
+                        <textarea formControlName="message" id="float-input" rows="7" pInputTextarea>
+                        </textarea>
+                        <label for="float-input">Your Message*</label>
+                    </p-floatLabel>
+
+                    @if ((reserveForm.get('message')?.touched  || 
+                    reserveForm.get('message')?.dirty)  && reserveForm.get('message')?.errors) {
+                    <p class="error-text">Message is required*</p>
+                    }
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary btn-lg w-fit mx-12 mt-6">Make Reservation</button>
+        </form>
+    </div>
+
+    <app-footer></app-footer>
+</div>
+
+<p-toast [life]="100000" />

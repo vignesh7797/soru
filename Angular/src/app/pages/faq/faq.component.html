@@ -1,0 +1,31 @@
+<div class="faq-container">
+    <app-banner type="small" title="F A Q"></app-banner>
+
+    <div class="faq-wrapper">
+        <p-accordion [activeIndex]="0">
+            @for (item of faqData; track $index) {
+                <p-accordionTab [header]="item.header+'?'">
+                    <ng-template pTemplate="content">
+                        <p>{{item.content}}</p>
+                        <hr class="my-4">
+                        <div class="flex items-center justify-start gap-3">
+                            <p class="text-sm text-[#969696]">Was this answer helpful?</p>
+                            <button (click)="onLike(item)" class="text-xs" [ngClass]="item.like == true ? 'text-amber-400' : 'text-[#858585]'">
+                                <span class="material-icons-round">
+                                    thumb_up
+                                </span>
+                            </button>
+                            <button (click)="onDisLike(item)" class="text-xs" [ngClass]="item.like == false ? 'text-amber-400' : 'text-[#858585]'">
+                                <span class="material-icons-round">
+                                    thumb_down
+                                </span>
+                            </button>
+                        </div>
+                    </ng-template>
+                </p-accordionTab>
+            }
+        </p-accordion>
+    </div>
+
+    <app-footer></app-footer>
+</div>

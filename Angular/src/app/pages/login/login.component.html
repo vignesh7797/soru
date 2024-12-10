@@ -1,0 +1,45 @@
+<div class="login-container">
+    <div class="login-banner"></div>
+    <div class="login-form">
+        
+        <h1 class="login-title">Log in</h1>
+        <p class="login-info">If you don’t have an account register <br> You can 
+            <span>
+                <a class="login-link" routerLink="/signup">Register here !</a>
+            </span>
+        </p>
+
+        <form class="mt-8 w-full md:w-[400px]" (ngSubmit)="onSubmit()">
+            <div class="w-full">
+                <p-floatLabel>
+                    <input class="soru-input" pInputText id="name" [(ngModel)]="email" name="email" />
+                    <label for="name">Email*</label>
+                </p-floatLabel>
+            </div>
+            
+            <div class="w-full mt-12">
+                <p-floatLabel>
+                    <p-password [(ngModel)]="password" name="password" [toggleMask]="true" [feedback]="false"/>
+                    <label for="name">Password*</label>
+                </p-floatLabel>
+            </div>
+
+            <div class="flex justify-between  mt-4 items-center">
+                <div class="w-full">
+                    <p-checkbox [(ngModel)]="reminder" name="reminder" inputId="rm" value="Remember" />
+                    <label for="rm" class="ml-2 text-sm text-[#989898]">Remember me</label>
+                </div>
+                <a routerLink="/forgotpassword" class="login-link w-full text-sm text-right opacity-75">Forgot Password?</a>
+            </div>
+
+            <button type="submit" title="Login" class="mt-8 mx-0 btn-primary btn-large btn-rounded">Login</button>
+        </form>
+
+        <p class="text-center my-6 text-sm text-[#989898]">or continue with</p>
+        <div class="flex justify-center">
+            <a target="_blank" href="www.facebook.com" title="Facebook" class="login-icon facebook"></a>
+            <a target="_blank" href="www.google.com" title="Google" class="login-icon google"></a>
+            <a target="_blank" href="www.apple.com" title="Apple" class="login-icon apple"></a>
+        </div>
+    </div>
+</div>

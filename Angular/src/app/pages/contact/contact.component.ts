@@ -12,7 +12,6 @@ import { MessageService } from 'primeng/api';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   encapsulation: ViewEncapsulation.None,
-  providers:[MessageService]
 })
 export class ContactComponent {
 
